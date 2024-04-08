@@ -37,7 +37,8 @@ nav a {
     padding: 50px 0;
     background-image: url('pexels-ketut-subiyanto-4963436.jpg.jpg')
     background-size: cover;
-    background-position: top left; /* Posições das imagens de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .block {
