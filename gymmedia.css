@@ -44,11 +44,12 @@ nav a {
 .block {
     padding: 20px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fff; /* Cor do texto padrão */
 }
 
 .block h2 {
     margin-top: 0;
+    color: #381f59; /* Cor mais escura da paleta da Gym Media */
 }
 
 #servicos {
@@ -70,9 +71,4 @@ nav a {
     .block {
         padding: 10px;
     }
-}
-
-/* Estilo para alterar a cor da fonte das seções "Serviços" e "Quem Somos" para preto */
-.block h2 {
-    color: black;
 }
