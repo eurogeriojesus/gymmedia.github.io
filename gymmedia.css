@@ -71,3 +71,8 @@ nav a {
         padding: 10px;
     }
 }
+
+/* Estilo para alterar a cor da fonte das seções "Serviços" e "Quem Somos" para preto */
+.block h2 {
+    color: black;
+}
