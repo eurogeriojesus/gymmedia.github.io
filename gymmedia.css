@@ -68,6 +68,10 @@ nav a:hover {
     background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos" */
 }
 
+#contato a {
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+}
+
 /* Estilos específicos para dispositivos móveis */
 @media screen and (max-width: 600px) {
     .container {
