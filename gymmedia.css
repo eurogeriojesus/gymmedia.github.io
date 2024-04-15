@@ -69,6 +69,11 @@ nav a:hover {
     border-radius: 20px; /* Adiciona bordas arredondadas */
 }
 
+.social-icons img {
+    width: 30px; /* Define a largura das imagens */
+    height: auto; /* Mantém a proporção da altura */
+    margin: 0 5px; /* Adiciona um pequeno espaçamento entre as imagens */
+
 /* Estilos específicos para dispositivos móveis */
 @media screen and (max-width: 600px) {
     .container {
