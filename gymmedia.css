@@ -10,6 +10,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
+    <section id="home" class="banner">
+    <h2>A parceira de marketing para as Áreas de Fitness e Wellness</h2>
+    <img src="caminho_para_a_sua_imagem/imagem_banner.jpg" alt="Imagem de banner">
+</section>
 }
 
 header {
