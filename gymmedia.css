@@ -28,9 +28,6 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-}
-
-nav a {
     /* Estilos padrão */
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
