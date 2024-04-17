@@ -47,6 +47,22 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
+.banner h2 {
+    animation: alternar-cores 5s infinite alternate;
+}
+
+@keyframes alternar-cores {
+    0% {
+        color: #201233; /* Inicia com a cor #201233 */
+    }
+    50% {
+        color: #00cfc8; /* Alterna para a cor #00cfc8 na metade da animação */
+    }
+    100% {
+        color: #201233; /* Retorna para a cor #201233 no final da animação */
+    }
+}
+
 .servico {
     background-color: #00cfc8; /* Cor secundária da Gym Media */
     color: #fff; /* Cor do texto */
