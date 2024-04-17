@@ -143,15 +143,22 @@ nav a:hover {
     position: relative; /* Define a posição relativa para o botão de contato */
 }
 
-#contato a {
-    border-radius: 20px; /* Adiciona bordas arredondadas */
-    background-color: #00cfc8; /* Define a cor de fundo do botão de contato */
-    padding: 10px 20px; /* Adiciona um padding interno */
-    color: #fff; /* Define a cor do texto */
-    text-decoration: none; /* Remove a decoração de texto */
-    display: inline-block; /* Permite definir largura e altura */
+.contato-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
-#contato::before {
-    content: ''; /* Adiciona conteúdo antes do botão de contato */
-    position: absolute; /*
+.contato-form {
+    width: 45%; /* Ajusta a largura do formulário */
+}
+
+.social-icons {
+    width: 45%; /* Ajusta a largura dos ícones de mídia social */
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons a img {
+    width: 40px; /* Ajusta o tamanho dos ícones */
+    height: auto;
+}
