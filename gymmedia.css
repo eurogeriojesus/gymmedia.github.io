@@ -154,9 +154,4 @@ nav a:hover {
 
 #contato::before {
     content: ''; /* Adiciona conteúdo antes do botão de contato */
-    position: absolute; /* Define a posição absoluta */
-    top: 50%; /* Alinha no centro verticalmente */
-    left: 50%; /* Alinha no centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o elemento */
-    width: calc(100% + 20px); /* Ajusta a largura para cobrir todo o botão mais o padding */
-    height: calc(100% + 20px); /* Ajusta
+    position: absolute; /*
