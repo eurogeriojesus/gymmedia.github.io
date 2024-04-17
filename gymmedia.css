@@ -83,4 +83,28 @@ nav a:hover {
     background-color: #502c7f; /* Cor terciária da Gym Media */
 }
 
-#quem-som
+#quem-somos {
+    background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos" */
+}
+
+#contato a {
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+}
+
+.social-icons img {
+    width: 30px; /* Define a largura das imagens */
+    height: auto; /* Mantém a proporção da altura */
+    margin: 0 5px; /* Adiciona um pequeno espaçamento entre as imagens */
+
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .banner {
+        padding: 30px 0;
+    }
+    .block {
+        padding: 10px;
+    }
+}
