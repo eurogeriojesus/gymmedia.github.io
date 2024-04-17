@@ -36,6 +36,12 @@ nav a:hover {
     transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
 
+header img {
+    width: 150px; /* Tamanho do logo */
+    display: block; /* Faz com que o logo se comporte como um bloco para melhor posicionamento */
+    margin: 0 auto; /* Centraliza o logo horizontalmente */
+}
+
 .banner {
     background-image: url('corrida.png'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
     background-color: #00cfc8; /* Cor secundária da Gym Media */
