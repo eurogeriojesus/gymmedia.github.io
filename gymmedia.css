@@ -1,137 +1,92 @@
-/* Estilos CSS aqui */
-body {
-    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
-    margin: 0;
-    padding: 0;
-    background-color: #03fff6; /* Cor de fundo padrão */
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Media - Agência de Marketing Digital</title>
+    <link rel="stylesheet" href="gymmedia.css">
+</head>
+<body>
+    <header>
+        <img src="GM_Logotipo.png" alt="Gym Media Logo">
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#servicos">Serviços</a> |
+            <a href="#quem-somos">Quem somos</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <div class="container">
+        <section id="home" class="banner gif-background"> <!-- Adicionando a classe "gif-background" aqui -->
+            <div class="frase-banner">
+                <h1 style="font-weight: 800; font-size: 2em;">A parceira de marketing para as Áreas de Fitness e Wellness</h1>
+            </div>
+        </section>
+    </div>
 
-header {
-    background-color: #381f59; /* Cor principal da Gym Media */
-    color: #fff;
-    padding: 10px;
-    display: flex; /* Permite o uso de flexbox */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-between; /* Distribui os itens uniformemente ao longo do espaço disponível */
-}
+    <section id="servicos" class="block">
+        <h2>Nossos Serviços</h2>
+        <div class="servico">
+            <h3>Automação de Marketing</h3>
+            <p>Gere novas oportunidades de negócio capturando novos contatos para a sua empresa.</p>
+        </div>
+        <div class="servico">
+            <h3>Atendimento em redes sociais</h3>
+            <p>Engaje sua audiência criando novas oportunidades de fechamento por meio de mensagens automatizadas.</p>
+        </div>
+        <div class="servico">
+            <h3>Vídeos Estratégicos</h3>
+            <p>Cative seu público-alvo e promova sua marca com vídeos estratégicos.</p>
+        </div>
+        <div class="servico">
+            <h3>Social Media</h3>
+            <p>Impulsione sua presença digital e conecte-se com seu público através de nossas estratégias de social media.</p>
+        </div>
+    </section>
 
-header img {
-    width: 70px; /* Aumenta o tamanho do logo */
-    margin-right: 10px; /* Espaçamento à direita */
-}
+    <section id="quem-somos" class="block">
+        <h2>Quem Somos</h2>
+        <!-- Adicione informações sobre a Gym Media aqui -->
+    </section>
 
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    <section id="contato" class="block">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST" onsubmit="return validarFormulario()">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    /* Estilos padrão */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-}
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
 
-nav a:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-}
+            <label for="cargo">Cargo:</label><br>
+            <select id="cargo" name="cargo" required>
+                <option value="CEO/Propietário">CEO/Propietário</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Analista">Analista</option>
+                <option value="Outros">Outros</option>
+            </select><br>
 
-.banner {
-    background-color: #00cfc8; /* Cor secundária da Gym Media */
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-    background-size: 100% auto; /* Expandir a imagem de fundo */
-    background-position: center;
-    background-repeat: no-repeat;
-}
+            <label for="tamanho-organizacao">Tamanho da Organização:</label><br>
+            <select id="tamanho-organizacao" name="tamanho-organizacao" required>
+                <option value="Micro empresa">Micro empresa</option>
+                <option value="Empresa de pequeno porte">Empresa de pequeno porte</option>
+            </select><br><br>
 
-.frase-banner {
-    padding: 0 20px; /* Adiciona um padding nas laterais para não cortar a frase */
-}
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-.frase-banner h1 {
-    font-weight: 800; /* Definindo o peso da fonte como bold */
-    font-size: 2em; /* Aumenta o tamanho da fonte */
-    animation: alternar-imagens 6s infinite; /* Ajusta a velocidade da animação */
-}
+    <footer>
+        <!-- Adicione informações de rodapé aqui -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/somosgymmedia/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/seu_perfil" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://wa.me/5511953987590" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
 
-@keyframes alternar-imagens {
-    0%, 50% {
-        background-image: url('corrida.png'); /* Primeira imagem GIF */
-    }
-    51%, 100% {
-        background-image: url('colagem.gif'); /* Segunda imagem GIF */
-    }
-}
-
-.servico {
-    background-color: #00cfc8; /* Cor secundária da Gym Media */
-    color: #fff; /* Cor do texto */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.servico h3 {
-    margin-top: 0;
-    color: #fff; /* Cor do título */
-}
-
-.servico p {
-    margin-bottom: 0;
-}
-
-.servico:hover {
-    background-color: #502c7f; /* Mudança de cor ao passar o mouse */
-}
-
-.block {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #fff; /* Cor do texto padrão */
-}
-
-.block h2 {
-    margin-top: 0;
-    color: #381f59; /* Cor mais escura da paleta da Gym Media */
-}
-
-#servicos {
-    background-color: #502c7f; /* Cor terciária da Gym Media */
-}
-
-#quem-somos {
-    background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos" */
-}
-
-#contato {
-    position: relative; /* Define a posição relativa para o botão de contato */
-}
-
-#contato a {
-    border-radius: 20px; /* Adiciona bordas arredondadas */
-    background-color: #00cfc8; /* Define a cor de fundo do botão de contato */
-    padding: 10px 20px; /* Adiciona um padding interno */
-    color: #fff; /* Define a cor do texto */
-    text-decoration: none; /* Remove a decoração de texto */
-    display: inline-block; /* Permite definir largura e altura */
-}
-
-#contato::before {
-    content: ''; /* Adiciona conteúdo antes do botão de contato */
-    position: absolute; /* Define a posição absoluta */
-    top: 50%; /* Alinha no centro verticalmente */
-    left: 50%; /* Alinha no centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o elemento */
-    width: calc(100% + 20px); /* Ajusta a largura para cobrir todo o botão mais o padding */
-    height: calc(100% + 20px); /* Ajusta a altura para cobrir todo o botão mais o padding */
-    background-color: #00cfc8; /* Define a cor de fundo */
-    border-radius: 30px;
+    <script src="script.js"></script>
+</body>
+</html>
