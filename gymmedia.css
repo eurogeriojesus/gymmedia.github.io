@@ -78,7 +78,7 @@ nav a:hover {
 .servico-item {
     width: calc(50% - 20px); /* 50% do espaço disponível com margens */
     margin-bottom: 20px;
-    border: 1px solid #ccc; /* Adicione uma borda para destacar os serviços */
+    border: 1px solid #381f59; /* Altera a cor da borda */
     border-radius: 10px;
     overflow: hidden; /* Evita que os cantos arredondados sejam afetados pelos elementos internos */
 }
@@ -131,7 +131,7 @@ nav a:hover {
     color: #381f59; /* Cor mais escura da paleta da Gym Media */
 }
 
-#servicos {
+#soluções {
     background-color: #502c7f; /* Cor terciária da Gym Media */
 }
 
@@ -159,11 +159,8 @@ nav a:hover {
     left: 50%; /* Alinha no centro horizontalmente */
     transform: translate(-50%, -50%); /* Centraliza o elemento */
     width: calc(100% + 20px); /* Ajusta a largura para cobrir todo o botão mais o padding */
-    height: calc(100% + 20px); /* Ajusta a altura para cobrir todo o botão mais o padding */
-    background-color: #00cfc8; /* Define a cor de fundo */
-    border-radius: 30px; /* Adiciona bordas arredondadas */
-    z-index: -1; /* Envia para trás do botão de contato */
-}
+    height: calc(100% + 20px); /* Ajusta a altura para cobrir todo o botão mais o
+
 
 /* Estilos específicos para dispositivos móveis */
 @media screen and (max-width: 600px) {
