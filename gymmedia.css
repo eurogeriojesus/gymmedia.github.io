@@ -39,28 +39,12 @@ nav a:hover {
 .banner {
     background-image: url('corrida.png'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
     background-color: #00cfc8; /* Cor secundária da Gym Media */
-    color: #fff;
+    color: #201233; /* Alterado para a cor #201233 */
     text-align: center;
     padding: 50px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.banner h2 {
-    animation: alternar-cores 5s infinite alternate;
-}
-
-@keyframes alternar-cores {
-    0% {
-        color: #201233; /* Inicia com a cor #201233 */
-    }
-    50% {
-        color: #00cfc8; /* Alterna para a cor #00cfc8 na metade da animação */
-    }
-    100% {
-        color: #201233; /* Retorna para a cor #201233 no final da animação */
-    }
 }
 
 .servico {
