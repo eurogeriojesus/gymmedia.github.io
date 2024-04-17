@@ -146,10 +146,7 @@ nav a:hover {
     .block {
         padding: 10px;
     }
-}
-
-/* Adicionando estilos para o gif de fundo */
-.gif-background {
-    background: url('seu_gif.gif') no-repeat center center fixed; /* Define o gif como plano de fundo */
-    background-size: cover; /* Garante que o gif cubra todo o elemento */
+    .frase-banner h1 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
 }
