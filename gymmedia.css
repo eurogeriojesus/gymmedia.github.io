@@ -16,12 +16,19 @@ header {
     background-color: #381f59; /* Cor principal da Gym Media */
     color: #fff;
     padding: 10px;
-    text-align: center;
+    display: flex; /* Permite o uso de flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+header img {
+    width: 30px; /* Tamanho do logo */
+    margin-right: 10px; /* Espaçamento à direita */
 }
 
 nav {
     text-align: center;
     margin-bottom: 20px;
+    flex-grow: 1; /* Faz com que a barra de navegação ocupe todo o espaço disponível */
 }
 
 nav a {
@@ -34,12 +41,6 @@ nav a {
 
 nav a:hover {
     transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-}
-
-header img {
-    width: 150px; /* Tamanho do logo */
-    display: block; /* Faz com que o logo se comporte como um bloco para melhor posicionamento */
-    margin: 0 auto; /* Centraliza o logo horizontalmente */
 }
 
 .banner {
