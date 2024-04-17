@@ -47,7 +47,7 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.banner h2 {
+.frase-banner {
     animation: alternar-cores 5s infinite alternate;
 }
 
