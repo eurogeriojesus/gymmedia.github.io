@@ -44,7 +44,6 @@ nav a:hover {
 }
 
 .banner {
-    background-image: url('corrida.png'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
     background-color: #00cfc8; /* Cor secundária da Gym Media */
     color: #fff;
     text-align: center;
@@ -61,15 +60,15 @@ nav a:hover {
 .frase-banner h1 {
     font-weight: 800; /* Definindo o peso da fonte como bold */
     font-size: 2em; /* Aumenta o tamanho da fonte */
-    animation: alternar-cores 2s infinite alternate; /* Ajusta a velocidade da animação */
+    animation: alternar-imagens 6s infinite; /* Ajusta a velocidade da animação */
 }
 
-@keyframes alternar-cores {
-    0%, 100% {
-        color: #201233; /* Inicia e termina com a cor #201233 */
+@keyframes alternar-imagens {
+    0%, 50% {
+        background-image: url('corrida.png'); /* Primeira imagem GIF */
     }
-    50% {
-        color: #00cfc8; /* Alterna para a cor #00cfc8 na metade da animação */
+    51%, 100% {
+        background-image: url('colagem.gif'); /* Segunda imagem GIF */
     }
 }
 
@@ -135,19 +134,4 @@ nav a:hover {
     width: calc(100% + 20px); /* Ajusta a largura para cobrir todo o botão mais o padding */
     height: calc(100% + 20px); /* Ajusta a altura para cobrir todo o botão mais o padding */
     background-color: #00cfc8; /* Define a cor de fundo */
-    border-radius: 30px; /* Adiciona bordas arredondadas */
-    z-index: -1; /* Envia para trás do botão de contato */
-}
-
-/* Estilos específicos para dispositivos móveis */
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-    .banner {
-        padding: 30px 0;
-    }
-    .block {
-        padding: 10px;
-    }
-}
+    border-radius: 30px;
