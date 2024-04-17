@@ -159,21 +159,4 @@ nav a:hover {
     left: 50%; /* Alinha no centro horizontalmente */
     transform: translate(-50%, -50%); /* Centraliza o elemento */
     width: calc(100% + 20px); /* Ajusta a largura para cobrir todo o botão mais o padding */
-    height: calc(100% + 20px); /* Ajusta a altura para cobrir todo o botão mais o
-
-
-/* Estilos específicos para dispositivos móveis */
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-    .banner {
-        padding: 30px 0;
-    }
-    .block {
-        padding: 10px;
-    }
-    .frase-banner h1 {
-        font-size: 1.2em; /* Reduz o tamanho da fonte para dispositivos móveis */
-    }
-}
+    height: calc(100% + 20px); /* Ajusta
