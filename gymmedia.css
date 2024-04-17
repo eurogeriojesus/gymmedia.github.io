@@ -10,7 +10,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    
 }
 
 header {
@@ -45,12 +44,27 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
 
-    <section id="home" class="banner">
-    <h2>A parceira de marketing para as Áreas de Fitness e Wellness</h2>
-    <img src="corrida.png.png" alt="Imagem de banner">
-</section>
+.servico {
+    background-color: #00cfc8; /* Cor secundária da Gym Media */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
 
+.servico h3 {
+    margin-top: 0;
+    color: #fff; /* Cor do título */
+}
+
+.servico p {
+    margin-bottom: 0;
+}
+
+.servico:hover {
+    background-color: #502c7f; /* Mudança de cor ao passar o mouse */
 }
 
 .block {
@@ -69,27 +83,4 @@ nav a:hover {
 }
 
 #quem-somos {
-    background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos" */
-}
-
-#contato a {
-    border-radius: 20px; /* Adiciona bordas arredondadas */
-}
-
-.social-icons img {
-    width: 30px; /* Define a largura das imagens */
-    height: auto; /* Mantém a proporção da altura */
-    margin: 0 5px; /* Adiciona um pequeno espaçamento entre as imagens */
-
-/* Estilos específicos para dispositivos móveis */
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-    .banner {
-        padding: 30px 0;
-    }
-    .block {
-        padding: 10px;
-    }
-}
+    background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos
