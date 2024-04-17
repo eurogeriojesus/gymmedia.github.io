@@ -123,6 +123,7 @@ nav a:hover {
     padding: 20px;
     margin-bottom: 20px;
     color: #fff; /* Cor do texto padrão */
+    text-align: center; /* Centraliza o texto */
 }
 
 .block h2 {
