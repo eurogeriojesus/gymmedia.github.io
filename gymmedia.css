@@ -47,8 +47,25 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
+.frase-banner {
+    background-size: cover; /* Ajusta a imagem de fundo para ocupar toda a largura da tela */
+    padding: 0 20px; /* Adiciona um padding nas laterais para não cortar a frase */
+}
+
 .frase-banner h2 {
-    font-size: 36px; /* Ajusta o tamanho da fonte da frase */
+    animation: alternar-cores 5s infinite alternate; /* Mantém a animação da frase */
+}
+
+@keyframes alternar-cores {
+    0% {
+        color: #201233; /* Inicia com a cor #201233 */
+    }
+    50% {
+        color: #00cfc8; /* Alterna para a cor #00cfc8 na metade da animação */
+    }
+    100% {
+        color: #201233; /* Retorna para a cor #201233 no final da animação */
+    }
 }
 
 .servico {
