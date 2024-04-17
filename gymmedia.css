@@ -14,9 +14,12 @@ body {
 
 header {
     background-color: #381f59; /* Cor principal da Gym Media */
-    color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+<header>
+    <img src="GM_Logotipo.png" alt="Gym Media Logo" width="150"> <!-- Substitua 'caminho/para/seu/logo.png' pelo caminho do seu logo -->
 }
 
 nav {
