@@ -37,6 +37,7 @@ nav a:hover {
 }
 
 .banner {
+    background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
     background-color: #00cfc8; /* Cor secundária da Gym Media */
     color: #fff;
     text-align: center;
@@ -82,5 +83,4 @@ nav a:hover {
     background-color: #502c7f; /* Cor terciária da Gym Media */
 }
 
-#quem-somos {
-    background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos
+#quem-som
