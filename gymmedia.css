@@ -58,8 +58,7 @@ nav a:hover {
     padding: 0 20px; /* Adiciona um padding nas laterais para não cortar a frase */
 }
 
-.frase-banner h2 {
-    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+.frase-banner h1 {
     font-weight: 800; /* Definindo o peso da fonte como bold */
     font-size: 2em; /* Aumenta o tamanho da fonte */
     animation: alternar-cores 2s infinite alternate; /* Ajusta a velocidade da animação */
@@ -138,4 +137,17 @@ nav a:hover {
     background-color: #00cfc8; /* Define a cor de fundo */
     border-radius: 30px; /* Adiciona bordas arredondadas */
     z-index: -1; /* Envia para trás do botão de contato */
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .banner {
+        padding: 30px 0;
+    }
+    .block {
+        padding: 10px;
+    }
 }
