@@ -70,24 +70,53 @@ nav a:hover {
 }
 
 .servico {
-    background-color: #00cfc8; /* Cor secundária da Gym Media */
-    color: #fff; /* Cor do texto */
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servico-item {
+    width: calc(50% - 20px); /* 50% do espaço disponível com margens */
     margin-bottom: 20px;
+    border: 1px solid #ccc; /* Adicione uma borda para destacar os serviços */
     border-radius: 10px;
+    overflow: hidden; /* Evita que os cantos arredondados sejam afetados pelos elementos internos */
 }
 
-.servico h3 {
+.servico-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.servico-info {
+    padding: 20px;
+}
+
+.servico-info h3 {
     margin-top: 0;
-    color: #fff; /* Cor do título */
 }
 
-.servico p {
-    margin-bottom: 0;
+.servico-info ul {
+    padding: 0;
+    margin: 10px 0;
 }
 
-.servico:hover {
-    background-color: #502c7f; /* Mudança de cor ao passar o mouse */
+.servico-info ul li {
+    list-style: none;
+}
+
+.servico-info button {
+    padding: 10px 20px;
+    background-color: #009c97;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.servico-info button:hover {
+    background-color: #007872;
 }
 
 .block {
