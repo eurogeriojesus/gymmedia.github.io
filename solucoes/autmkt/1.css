@@ -1,68 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automação de Marketing</title>
-    <link rel="stylesheet" href="css.css">
-</head>
-<body>
-    <header>
-        <div class="header-buttons">
-            <button>Página Inicial</button>
-            <button>Fale com um Especialista</button>
-        </div>
-    </header>
-    <h1>Automação de Marketing</h1>
-    <div class="grid-container">
-        <div class="box">
-            <p>Atraia potenciais clientes</p>
-        </div>
-        <div class="box">
-            <p>Se relacione e qualifique a sua base</p>
-        </div>
-        <div class="box">
-            <p>Feche mais vendas</p>
-        </div>
-    </div>
-    <div class="description">
-        <p>O inbound marketing é uma estratégia fundamental para o sucesso de qualquer negócio no mundo digital. Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros. Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável. Portanto, investir em inbound marketing é investir no crescimento e na prosperidade do seu negócio, alinhando-se com as melhores práticas do mercado e maximizando o retorno sobre o investimento.</p>
-    </div>
-    
-    <section class="form-section" style="background-color: #502c7f;">
-        <h2 style="color: white;">FALE COM UM ESPECIALISTA</h2>
-        <form id="contact-form" action="#" method="post">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" required><br>
+body {
+    background-color: #03fff6;
+    font-family: Poppins, sans-serif;
+}
 
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required><br>
+h1 {
+    text-align: center;
+}
 
-            <label for="title">Cargo:</label><br>
-            <select id="title" name="title" required>
-                <option value="">Selecione...</option>
-                <option value="CEO">CEO</option>
-                <option value="Diretor">Diretor</option>
-                <option value="Gerente">Gerente</option>
-                <option value="Analista">Analista</option>
-                <option value="Estagiário">Estagiário</option>
-                <option value="Outros">Outros</option>
-            </select><br>
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
 
-            <label for="organization-website">Site da organização:</label><br>
-            <input type="url" id="organization-website" name="organization-website" required><br>
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #502c7f;
+    border-radius: 20px;
+    margin: 0 10px; /* Adicionando margem entre as caixas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            <label for="employees">Número de colaboradores:</label><br>
-            <select id="employees" name="employees" required>
-                <option value="">Selecione...</option>
-                <option value="1-9">1 a 9</option>
-                <option value="10-49">10 a 49</option>
-                <option value="50-99">50 a 99</option>
-                <option value="mais de 100">mais de 100</option>
-            </select><br>
+.box p {
+    color: white;
+    text-align: center;
+    margin: 10px; /* Adicionando margem interna */
+    font-size: 1.3em; /* Aumentando o tamanho da fonte */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
 
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
-</body>
-</html>
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #009c97; /* Cor de fundo do cabeçalho */
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.header-buttons button {
+    background-color: #502c7f;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Adicionando borda arredondada */
+    padding: 10px 20px; /* Ajustando o padding */
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+.header-buttons button:first-child {
+    margin-left: auto; /* Move o primeiro botão para o lado direito */
+}
+
+.description {
+    margin: 20px; /* Adicionando margem externa */
+}
+
+#contact-form {
+    width: 400px;
+    margin: 0 auto; /* Centralizando o formulário */
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #381f59; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #381f59; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #5a3b7e; /* Cor de fundo do botão ao passar o mouse */
+}
