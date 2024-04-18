@@ -1,34 +1,30 @@
-/* Estilo dos quadrados de destaque */
-.solution .highlight-box {
-    display: flex;
-    justify-content: space-between; /* Para espaçamento uniforme entre os quadrados */
-    margin-top: 20px;
+body {
+    background-color: #03fff6;
+    font-family: Poppins, sans-serif;
 }
 
-.solution .highlight-item {
-    background-color: #505c7f; /* Cor dos quadrados */
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    width: calc(30% - 5px); /* Ajuste o tamanho conforme necessário */
-    text-align: center; /* Centraliza o texto */
+h1 {
+    text-align: center;
 }
 
-.solution .highlight-item:last-child {
-    margin-right: 0; /* Remove a margem à direita do último item */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
 }
 
-.button {
-    display: inline-block;
+.box {
+    width: 200px;
+    height: 200px;
     background-color: #502c7f;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; /* Espaçamento do botão */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button:hover {
-    background-color: #201233;
+.box p {
+    color: white;
+    text-align: center;
 }
