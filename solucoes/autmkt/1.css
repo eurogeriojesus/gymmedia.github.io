@@ -55,3 +55,7 @@ header {
 .header-buttons button:first-child {
     margin-left: auto; /* Move o primeiro botão para o lado direito */
 }
+
+.description {
+    margin: 20px; /* Adicionando margem externa */
+}
