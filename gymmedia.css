@@ -106,16 +106,19 @@ nav a:hover {
     list-style: none;
 }
 
-.servico-info button {
+.servico-info .button {
     padding: 10px 20px;
     background-color: #009c97;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block; /* Garante que o botão tenha a largura do conteúdo */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
 
-.servico-info button:hover {
+.servico-info .button:hover {
     background-color: #007872;
 }
 
