@@ -1,6 +1,12 @@
 body {
-    background-color: #03fff6;
+    margin: 0;
+    padding: 0;
     font-family: Poppins, sans-serif;
+}
+
+#full-page {
+    background-color: #381f59; /* Alterando a cor de fundo da tela inteira */
+    color: white; /* Alterando a cor do texto para branco */
 }
 
 h1 {
@@ -63,10 +69,9 @@ header {
 #contact-form {
     width: 400px;
     margin: 0 auto;
-    background-color: #381f59; /* Alterando a cor de fundo */
-    padding: 20px; /* Adicionando um espaçamento interno */
-    border-radius: 10px; /* Adicionando borda arredondada */
-    text-align: center; /* Centralizando o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #contact-form label {
@@ -101,5 +106,5 @@ header {
 }
 
 #form-title {
-    color: white; /* Alterando a cor do título */
+    color: white;
 }
