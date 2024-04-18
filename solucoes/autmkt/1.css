@@ -108,3 +108,24 @@ header {
 #form-title {
     color: white;
 }
+
+.marketing-section {
+    background-color: #00cfc8;
+    display: flex;
+    align-items: center;
+}
+
+.marketing-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.marketing-image {
+    flex: 1;
+    text-align: center;
+}
+
+.marketing-image img {
+    max-width: 100%;
+    height: auto;
+}
