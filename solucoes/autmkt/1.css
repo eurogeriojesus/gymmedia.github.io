@@ -66,11 +66,7 @@ header {
     background-color: #381f59; /* Alterando a cor de fundo */
     padding: 20px; /* Adicionando um espaçamento interno */
     border-radius: 10px; /* Adicionando borda arredondada */
-}
-
-#form-title {
-    text-align: center; /* Centralizando o título */
-    color: white; /* Alterando a cor do texto */
+    text-align: center; /* Centralizando o formulário */
 }
 
 #contact-form label {
@@ -102,4 +98,8 @@ header {
 
 #contact-form input[type="submit"]:hover {
     background-color: #5a3b7e;
+}
+
+#form-title {
+    color: white; /* Alterando a cor do título */
 }
