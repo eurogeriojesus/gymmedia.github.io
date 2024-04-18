@@ -57,6 +57,7 @@ footer {
     padding: 20px;
     border-radius: 5px;
     width: 30%; /* Ajuste o tamanho conforme necessário */
+    text-align: center; /* Centraliza o texto */
 }
 
 .button {
