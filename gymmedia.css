@@ -136,6 +136,7 @@ nav a:hover {
 
 #soluções {
     background-color: #502c7f; /* Cor terciária da Gym Media */
+    text-align: center; /* Centraliza o texto */
 }
 
 #quem-somos {
