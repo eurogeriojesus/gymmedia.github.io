@@ -1,64 +1,21 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #03fff6; /* Nova cor de fundo */
-    color: #fff;
-}
-
-header {
-    background-color: #00cfc8;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section.solution {
-    padding: 20px;
-}
-
-footer {
-    background-color: #502c7f;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Estilo dos quadrados de destaque */
-.highlight-box {
+.solution .highlight-box {
     display: flex;
     justify-content: space-between; /* Para espaçamento uniforme entre os quadrados */
     margin-top: 20px;
 }
 
-.highlight-item {
+.solution .highlight-item {
     background-color: #505c7f; /* Cor dos quadrados */
     color: #fff;
     padding: 20px;
     border-radius: 5px;
-    width: 30%; /* Ajuste o tamanho conforme necessário */
+    width: calc(30% - 5px); /* Ajuste o tamanho conforme necessário */
     text-align: center; /* Centraliza o texto */
-    margin-right: 10px; /* Espaçamento entre os quadrados */
+}
+
+.solution .highlight-item:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item */
 }
 
 .button {
