@@ -58,6 +58,7 @@ footer {
     border-radius: 5px;
     width: 30%; /* Ajuste o tamanho conforme necessário */
     text-align: center; /* Centraliza o texto */
+    margin-right: 10px; /* Espaçamento entre os quadrados */
 }
 
 .button {
