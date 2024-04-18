@@ -17,7 +17,7 @@ h1 {
     height: 200px;
     background-color: #502c7f;
     border-radius: 20px;
-    margin: 0 10px; /* Adicionando margem entre as caixas */
+    margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,16 +26,16 @@ h1 {
 .box p {
     color: white;
     text-align: center;
-    margin: 10px; /* Adicionando margem interna */
-    font-size: 1.3em; /* Aumentando o tamanho da fonte */
-    font-weight: bold; /* Deixando o texto em negrito */
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
-    background-color: #009c97; /* Cor de fundo do cabeçalho */
+    background-color: #009c97;
 }
 
 .header-buttons {
@@ -46,28 +46,28 @@ header {
     background-color: #502c7f;
     color: white;
     border: none;
-    border-radius: 20px; /* Adicionando borda arredondada */
-    padding: 10px 20px; /* Ajustando o padding */
+    border-radius: 20px;
+    padding: 10px 20px;
     cursor: pointer;
-    margin-left: 10px; /* Espaçamento entre os botões */
+    margin-left: 10px;
 }
 
 .header-buttons button:first-child {
-    margin-left: auto; /* Move o primeiro botão para o lado direito */
+    margin-left: auto;
 }
 
 .description {
-    margin: 20px; /* Adicionando margem externa */
+    margin: 20px;
 }
 
 #contact-form {
     width: 400px;
-    margin: 0 auto; /* Centralizando o formulário */
+    margin: 0 auto;
 }
 
 #contact-form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduzindo o espaçamento */
 }
 
 #contact-form input[type="text"],
@@ -77,13 +77,13 @@ header {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #381f59; /* Cor da borda */
-    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #381f59;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
 #contact-form input[type="submit"] {
-    background-color: #381f59; /* Cor de fundo do botão */
+    background-color: #381f59;
     color: white;
     border: none;
     border-radius: 10px;
@@ -93,5 +93,5 @@ header {
 }
 
 #contact-form input[type="submit"]:hover {
-    background-color: #5a3b7e; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #5a3b7e;
 }
