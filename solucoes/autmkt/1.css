@@ -114,4 +114,17 @@ header {
     margin-bottom: 20px;
 }
 
-.mark
+.marketing-text, .marketing-image {
+    flex: 1;
+}
+
+.marketing-text p {
+    padding: 20px;
+    background-color: #00cfc8;
+    color: white;
+}
+
+.marketing-image img {
+    max-width: 100%;
+    height: auto;
+}
