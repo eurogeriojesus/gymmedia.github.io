@@ -59,3 +59,39 @@ header {
 .description {
     margin: 20px; /* Adicionando margem externa */
 }
+
+#contact-form {
+    width: 400px;
+    margin: 0 auto; /* Centralizando o formulário */
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #381f59; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #381f59; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #5a3b7e; /* Cor de fundo do botão ao passar o mouse */
+}
