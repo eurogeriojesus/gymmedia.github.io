@@ -110,22 +110,8 @@ header {
 }
 
 .marketing-section {
-    background-color: #201233;
     display: flex;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
-.marketing-text {
-    flex: 1;
-    padding: 20px;
-}
-
-.marketing-image {
-    flex: 1;
-    text-align: center;
-}
-
-.marketing-image img {
-    max-width: 100%;
-    height: auto;
-}
+.mark
