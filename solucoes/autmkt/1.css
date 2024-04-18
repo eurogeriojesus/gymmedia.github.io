@@ -35,16 +35,20 @@ header {
     padding: 10px;
 }
 
+.header-buttons {
+    display: flex;
+}
+
 .header-buttons button {
-    margin-left: 10px;
     background-color: #502c7f;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
+    border-radius: 20px; /* Adicionando borda arredondada */
+    padding: 10px 20px; /* Ajustando o padding */
     cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre os botões */
 }
 
 .header-buttons button:first-child {
-    margin-left: 0;
+    margin-left: auto; /* Move o primeiro botão para o lado direito */
 }
