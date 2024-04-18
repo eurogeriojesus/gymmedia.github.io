@@ -52,7 +52,7 @@ footer {
 }
 
 .highlight-item {
-    background-color: #009c97; /* Cor dos quadrados */
+    background-color: #502c7f; /* Cor dos quadrados */
     color: #fff;
     padding: 20px;
     border-radius: 5px;
