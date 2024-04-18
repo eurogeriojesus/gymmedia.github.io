@@ -33,6 +33,7 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    background-color: #009c97; /* Cor de fundo do cabeçalho */
 }
 
 .header-buttons {
