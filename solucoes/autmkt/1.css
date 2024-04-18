@@ -63,11 +63,19 @@ header {
 #contact-form {
     width: 400px;
     margin: 0 auto;
+    background-color: #381f59; /* Alterando a cor de fundo */
+    padding: 20px; /* Adicionando um espaçamento interno */
+    border-radius: 10px; /* Adicionando borda arredondada */
+}
+
+#form-title {
+    text-align: center; /* Centralizando o título */
+    color: white; /* Alterando a cor do texto */
 }
 
 #contact-form label {
     display: block;
-    margin-bottom: 5px; /* Reduzindo o espaçamento */
+    margin-bottom: 5px;
 }
 
 #contact-form input[type="text"],
