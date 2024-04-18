@@ -2,7 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #381f59;
+    body {
+    background-color: #03fff6; /* Nova cor de fundo */
+}
+
     color: #fff;
 }
 
