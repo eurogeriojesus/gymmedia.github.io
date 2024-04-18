@@ -47,7 +47,7 @@ footer {
 /* Estilo dos quadrados de destaque */
 .highlight-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Para espaçamento uniforme entre os quadrados */
     margin-top: 20px;
 }
 
