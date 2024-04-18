@@ -27,7 +27,8 @@ h1 {
     color: white;
     text-align: center;
     margin: 10px; /* Adicionando margem interna */
-    font-size: 1.2em; /* Aumentando o tamanho do texto */
+    font-size: 1.3em; /* Aumentando o tamanho da fonte */
+    font-weight: bold; /* Deixando o texto em negrito */
 }
 
 header {
