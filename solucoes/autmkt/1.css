@@ -13,10 +13,10 @@ h1 {
     text-align: center;
 }
 
-.grid-container {
+.boxes-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Adicionando margem inferior para separar o conteúdo */
+    flex-direction: column;
+    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados do texto */
 }
 
 .box {
@@ -24,7 +24,7 @@ h1 {
     height: 200px;
     background-color: #502c7f;
     border-radius: 20px;
-    margin: 0 10px;
+    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,16 +65,15 @@ header {
 
 .content-container {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px; /* ajuste de largura máxima */
     margin: 0 auto; /* centralizar horizontalmente */
 }
 
 .description {
-    width: calc(50% - 15px); /* largura do texto */
+    width: 50%; /* largura do texto */
     margin-right: 20px; /* espaço entre o texto e o formulário */
-    font-size: 1.5em; /* aumentando o tamanho do texto */
+    font-size: 1.5em; /* tamanho do texto */
 }
 
 .arrow {
@@ -82,7 +81,7 @@ header {
 }
 
 .form-container {
-    width: calc(50% - 15px); /* largura do formulário */
+    width: 50%; /* largura do formulário */
     background-color: #00cfc8; /* cor de fundo para destacar o formulário */
     padding: 20px;
     border-radius: 10px;
@@ -97,7 +96,7 @@ header {
 #contact-form input[type="email"],
 #contact-form select,
 #contact-form input[type="url"] {
-    width: 100%;
+    width: calc(100% - 22px); /* ajuste da largura para compensar o padding e a borda */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #381f59;
@@ -108,3 +107,12 @@ header {
 #contact-form input[type="submit"] {
     background-color: #381f59;
     color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #5a3b7e;
+}
