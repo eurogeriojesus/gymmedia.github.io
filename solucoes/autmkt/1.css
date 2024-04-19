@@ -70,8 +70,9 @@ header {
 }
 
 .additional-text {
-    width: 50%; /* largura do texto adicional */
+    width: 100%; /* largura total */
     margin-top: 20px; /* espaço acima das frases adicionais */
+    text-align: center; /* centralizar o texto */
 }
 
 .arrow {
