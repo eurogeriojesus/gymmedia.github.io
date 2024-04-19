@@ -83,4 +83,28 @@ header {
 
 .form-container {
     width: calc(50% - 15px); /* largura do formulário */
-    background-color
+    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #381f59;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #381f59;
+    color: white;
