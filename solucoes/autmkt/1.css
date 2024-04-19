@@ -74,47 +74,13 @@ header {
 .description {
     width: calc(50% - 15px); /* largura do texto */
     margin-right: 20px; /* espaço entre o texto e o formulário */
-    font-size: 1.2em; /* aumentando o tamanho do texto */
+    font-size: 1.5em; /* aumentando o tamanho do texto */
+}
+
+.arrow {
+    margin-right: 5px;
 }
 
 .form-container {
     width: calc(50% - 15px); /* largura do formulário */
-    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form select,
-#contact-form input[type="url"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #381f59;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-#contact-form input[type="submit"] {
-    background-color: #381f59;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#contact-form input[type="submit"]:hover {
-    background-color: #5a3b7e;
-}
-
-#form-title {
-    color: white;
-}
+    background-color
