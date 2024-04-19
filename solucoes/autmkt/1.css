@@ -66,12 +66,13 @@ header {
     margin: 20px;
 }
 
-#contact-form {
+.form-container {
     width: 400px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
 }
 
 #contact-form label {
