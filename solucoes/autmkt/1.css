@@ -15,8 +15,7 @@ h1 {
 
 .boxes-container {
     display: flex;
-    flex-direction: column;
-    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados do texto */
+    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
 }
 
 .box {
@@ -24,7 +23,7 @@ h1 {
     height: 200px;
     background-color: #502c7f;
     border-radius: 20px;
-    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
+    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,21 +69,19 @@ header {
     margin: 0 auto; /* centralizar horizontalmente */
 }
 
-.description {
-    width: 50%; /* largura do texto */
-    margin-right: 20px; /* espaço entre o texto e o formulário */
-    font-size: 1.5em; /* tamanho do texto */
-}
-
-.arrow {
-    margin-right: 5px;
-}
-
 .form-container {
     width: 50%; /* largura do formulário */
     background-color: #00cfc8; /* cor de fundo para destacar o formulário */
     padding: 20px;
     border-radius: 10px;
+}
+
+.additional-text {
+    width: 50%; /* largura do texto adicional */
+}
+
+.arrow {
+    margin-right: 5px;
 }
 
 #contact-form label {
