@@ -62,17 +62,24 @@ header {
     margin-left: auto;
 }
 
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* ajuste de largura máxima */
+    margin: 0 auto; /* centralizar horizontalmente */
+}
+
 .description {
-    margin: 20px;
+    width: 45%; /* largura do texto */
+    margin-right: 20px; /* espaço entre o texto e o formulário */
 }
 
 .form-container {
-    width: 400px;
-    margin: 0 auto;
+    width: 45%; /* largura do formulário */
+    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
 }
 
 #contact-form label {
