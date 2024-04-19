@@ -74,6 +74,7 @@ header {
 .description {
     width: calc(50% - 15px); /* largura do texto */
     margin-right: 20px; /* espaço entre o texto e o formulário */
+    font-size: 1.2em; /* aumentando o tamanho do texto */
 }
 
 .form-container {
