@@ -110,18 +110,19 @@ header {
 }
 
 .marketing-section {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.marketing-text, .marketing-image {
-    flex: 1;
-}
-
-.marketing-text p {
-    padding: 20px;
     background-color: #00cfc8;
-    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.marketing-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.marketing-image {
+    flex: 1;
+    text-align: center;
 }
 
 .marketing-image img {
