@@ -16,6 +16,7 @@ h1 {
 .grid-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px; /* Adicionando margem inferior para separar o conteúdo */
 }
 
 .box {
@@ -71,12 +72,12 @@ header {
 }
 
 .description {
-    width: 45%; /* largura do texto */
+    width: calc(50% - 15px); /* largura do texto */
     margin-right: 20px; /* espaço entre o texto e o formulário */
 }
 
 .form-container {
-    width: 45%; /* largura do formulário */
+    width: calc(50% - 15px); /* largura do formulário */
     background-color: #00cfc8; /* cor de fundo para destacar o formulário */
     padding: 20px;
     border-radius: 10px;
