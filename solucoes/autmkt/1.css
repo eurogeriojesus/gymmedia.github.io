@@ -115,3 +115,11 @@ header {
 #contact-form input[type="submit"]:hover {
     background-color: #5a3b7e;
 }
+/* Efeito de transição nos quadrados de texto */
+.box {
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
+}
