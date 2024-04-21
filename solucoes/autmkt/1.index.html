@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="1.css">
     <style>
         /* Seu CSS personalizado aqui, se necessário */
-        /* Ajuste para o formulário ocupar todo o lado direito apenas na versão web */
+        /* Ajuste para o formulário na versão web ocupar todo o lado direito */
         @media (min-width: 768px) {
             .form-container {
                 width: 100%;
                 max-width: 100%; /* Defina a largura máxima do formulário */
+            }
+        }
+
+        /* Ajuste para o formulário na versão mobile ocupar o espaço padrão */
+        @media (max-width: 767px) {
+            .form-container {
+                width: calc(100% - 20px); /* Ajusta o formulário para ocupar todo o espaço disponível com um pequeno espaço de margem */
+                margin: 10px; /* Adiciona margem ao redor do formulário na versão mobile */
             }
         }
     </style>
