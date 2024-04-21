@@ -5,8 +5,8 @@ body {
 }
 
 #full-page {
-    background-color: #381f59;
-    color: white;
+    background-color: #381f59; /* Alterando a cor de fundo da tela inteira */
+    color: white; /* Alterando a cor do texto para branco */
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 
 .boxes-container {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
 }
 
 .box {
@@ -23,7 +23,7 @@ h1 {
     height: 200px;
     background-color: #502c7f;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,14 +65,14 @@ header {
 .content-container {
     display: flex;
     align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* ajuste de largura máxima */
+    margin: 0 auto; /* centralizar horizontalmente */
 }
 
 .additional-text {
-    margin-top: 20px;
-    margin-right: 20px;
-    text-align: right;
+    width: 100%; /* largura total */
+    margin-top: 20px; /* espaço acima das frases adicionais */
+    text-align: center; /* centralizar o texto */
 }
 
 .arrow {
@@ -80,7 +80,8 @@ header {
 }
 
 .form-container {
-    background-color: #00cfc8;
+    width: 50%; /* largura do formulário */
+    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
     padding: 20px;
     border-radius: 10px;
 }
@@ -94,7 +95,7 @@ header {
 #contact-form input[type="email"],
 #contact-form select,
 #contact-form input[type="url"] {
-    width: calc(100% - 22px);
+    width: calc(100% - 22px); /* ajuste da largura para compensar o padding e a borda */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #381f59;
@@ -114,43 +115,11 @@ header {
 #contact-form input[type="submit"]:hover {
     background-color: #5a3b7e;
 }
-
+/* Efeito de transição nos quadrados de texto */
 .box {
     transition: background-color 0.3s ease;
 }
 
 .box:hover {
-    background-color: #201233;
-}
-
-/* Adicionando media queries para tornar o layout responsivo */
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-
-    .form-container,
-    .left-content {
-        width: 100%;
-    }
-
-    .box {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .header-buttons button {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .header-buttons {
-        flex-direction: column;
-    }
-
-    .additional-text {
-        text-align: center;
-        width: 100%;
-        margin: 20px 0;
-    }
+    background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
 }
