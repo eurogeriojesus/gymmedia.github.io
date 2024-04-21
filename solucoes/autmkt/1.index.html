@@ -10,12 +10,21 @@
         /* Adicionando media queries para tornar o layout responsivo */
         @media (min-width: 769px) {
             .content-container {
+                display: flex;
+                align-items: flex-start;
                 justify-content: space-between;
             }
 
+            .left-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .additional-text {
-                width: auto;
+                margin-top: 0; /* Remover a margem superior para alinhar com o quadrado */
                 margin-right: 20px;
+                text-align: right; /* Alinhar à direita */
             }
 
             .form-container {
