@@ -6,27 +6,28 @@
     <title>Automação de Marketing</title>
     <link rel="stylesheet" href="1.css">
     <style>
-        /* Adicionando estilos CSS adicionais */
-        .content-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between; /* Para separar os elementos */
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        /* Estilos para dispositivos móveis */
+        @media only screen and (max-width: 768px) {
+            .content-container {
+                flex-direction: column; /* Alterando a direção do flex container para coluna */
+                align-items: center; /* Centralizando os elementos na horizontal */
+            }
 
-        .left-content {
-            width: calc(50% - 10px); /* 50% do espaço disponível menos a margem entre os elementos */
-            margin-right: 10px; /* Adicionando uma margem entre os elementos */
-        }
+            .left-content,
+            .form-container {
+                width: 100%; /* Ocupando toda a largura do viewport */
+                margin: 0; /* Removendo margens */
+            }
 
-        .additional-text {
-            margin-right: 10px; /* Adicionando uma margem à direita para alinhar com o quadrado */
-        }
+            .left-content {
+                margin-bottom: 20px; /* Adicionando margem inferior para separar do formulário */
+            }
 
-        .form-container {
-            width: calc(50% - 10px); /* 50% do espaço disponível menos a margem entre os elementos */
-            margin-left: 10px; /* Adicionando uma margem à esquerda para alinhar com o texto adicional */
+            .additional-text {
+                font-size: 1.2em; /* Reduzindo o tamanho da fonte */
+                margin-right: 0; /* Removendo a margem direita */
+                text-align: center; /* Centralizando o texto */
+            }
         }
     </style>
 </head>
@@ -52,10 +53,10 @@
                 </div>
             </div>
             <div class="additional-text">
-                <p style="font-size: 1.5em; text-align: left;">
+                <p>
                     → Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.
                 </p>
-                <p style="font-size: 1.5em; text-align: left;">
+                <p>
                     → Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.
                 </p>
             </div>
