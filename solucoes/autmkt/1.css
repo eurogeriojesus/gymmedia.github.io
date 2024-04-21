@@ -123,3 +123,34 @@ header {
 .box:hover {
     background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
 }
+
+/* Adicionando media queries para tornar o layout responsivo */
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+    }
+
+    .form-container,
+    .left-content {
+        width: 100%; /* Define a largura para 100% em dispositivos menores */
+    }
+
+    .box {
+        margin-right: 0; /* Remove a margem à direita nos quadrados em dispositivos menores */
+        margin-bottom: 20px; /* Adiciona margem inferior para separar os quadrados em dispositivos menores */
+    }
+
+    .header-buttons button {
+        margin-left: 0; /* Remove a margem à esquerda nos botões do cabeçalho em dispositivos menores */
+        margin-bottom: 10px; /* Adiciona margem inferior para separar os botões do cabeçalho em dispositivos menores */
+    }
+
+    .header-buttons {
+        flex-direction: column; /* Altera a direção do flexbox para coluna nos botões do cabeçalho em dispositivos menores */
+    }
+
+    .additional-text {
+        text-align: left; /* Alinha o texto adicional à esquerda em dispositivos menores */
+    }
+}
