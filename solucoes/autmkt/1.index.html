@@ -4,31 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automação de Marketing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="1.css">
     <style>
         /* Seu CSS atual aqui... */
         /* Adicionando media queries para tornar o layout responsivo */
         @media (min-width: 769px) {
             .content-container {
-                display: flex;
-                align-items: flex-start;
                 justify-content: space-between;
             }
 
-            .left-content {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
             .additional-text {
-                margin-top: 0; /* Remover a margem superior para alinhar com o quadrado */
-                margin-right: 20px;
-                text-align: right; /* Alinhar à direita */
+                width: calc(50% - 220px);
             }
 
             .form-container {
-                flex: 1;
+                width: calc(50% - 220px);
             }
         }
     </style>
@@ -36,67 +27,71 @@
 <body id="full-page">
     <header>
         <div class="header-buttons">
-            <button>Página Inicial</button>
-            <button>Fale com um Especialista</button>
+            <button class="btn btn-primary">Página Inicial</button>
+            <button class="btn btn-primary">Fale com um Especialista</button>
         </div>
     </header>
-    <h1>Automação de Marketing</h1>
-    <div class="content-container">
-        <div class="left-content">
-            <div class="boxes-container">
-                <div class="box">
-                    <p>Atraia potenciais clientes</p>
+    <h1 class="text-center">Automação de Marketing</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="boxes-container">
+                    <div class="box">
+                        <p>Atraia potenciais clientes</p>
+                    </div>
+                    <div class="box">
+                        <p>Se relacione e qualifique a sua base</p>
+                    </div>
+                    <div class="box">
+                        <p>Feche mais vendas</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <p>Se relacione e qualifique a sua base</p>
-                </div>
-                <div class="box">
-                    <p>Feche mais vendas</p>
+                <div class="additional-text">
+                    <p style="font-size: 1.5em; text-align: left;">
+                        → Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.
+                    </p>
+                    <p style="font-size: 1.5em; text-align: left;">
+                        → Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.
+                    </p>
                 </div>
             </div>
-            <div class="additional-text">
-                <p style="font-size: 1.5em; text-align: left;">
-                    → Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.
-                </p>
-                <p style="font-size: 1.5em; text-align: left;">
-                    → Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.
-                </p>
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h2 id="form-title">FALE COM UM ESPECIALISTA</h2>
+                    <form id="contact-form" action="#" method="post">
+                        <label for="name">Nome:</label><br>
+                        <input type="text" id="name" name="name" class="form-control" required><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" class="form-control" required><br>
+
+                        <label for="title">Cargo:</label><br>
+                        <select id="title" name="title" class="form-control" required>
+                            <option value="">Selecione...</option>
+                            <option value="CEO">CEO</option>
+                            <option value="Diretor">Diretor</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Analista">Analista</option>
+                            <option value="Estagiário">Estagiário</option>
+                            <option value="Outros">Outros</option>
+                        </select><br>
+
+                        <label for="organization-website">Site da organização:</label><br>
+                        <input type="url" id="organization-website" name="organization-website" class="form-control" required><br>
+
+                        <label for="employees">Número de colaboradores:</label><br>
+                        <select id="employees" name="employees" class="form-control" required>
+                            <option value="">Selecione...</option>
+                            <option value="1-9">1 a 9</option>
+                            <option value="10-49">10 a 49</option>
+                            <option value="50-99">50 a 99</option>
+                            <option value="mais de 100">mais de 100</option>
+                        </select><br>
+
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="form-container">
-            <h2 id="form-title">FALE COM UM ESPECIALISTA</h2>
-            <form id="contact-form" action="#" method="post">
-                <label for="name">Nome:</label><br>
-                <input type="text" id="name" name="name" required><br>
-
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br>
-
-                <label for="title">Cargo:</label><br>
-                <select id="title" name="title" required>
-                    <option value="">Selecione...</option>
-                    <option value="CEO">CEO</option>
-                    <option value="Diretor">Diretor</option>
-                    <option value="Gerente">Gerente</option>
-                    <option value="Analista">Analista</option>
-                    <option value="Estagiário">Estagiário</option>
-                    <option value="Outros">Outros</option>
-                </select><br>
-
-                <label for="organization-website">Site da organização:</label><br>
-                <input type="url" id="organization-website" name="organization-website" required><br>
-
-                <label for="employees">Número de colaboradores:</label><br>
-                <select id="employees" name="employees" required>
-                    <option value="">Selecione...</option>
-                    <option value="1-9">1 a 9</option>
-                    <option value="10-49">10 a 49</option>
-                    <option value="50-99">50 a 99</option>
-                    <option value="mais de 100">mais de 100</option>
-                </select><br>
-
-                <input type="submit" value="Enviar">
-            </form>
         </div>
     </div>
     <script src="script.js"></script>
