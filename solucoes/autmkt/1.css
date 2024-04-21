@@ -70,10 +70,9 @@ header {
 }
 
 .additional-text {
-    width: auto;
-    margin-right: 20px;
     margin-top: 20px;
-    text-align: left;
+    margin-right: 20px;
+    text-align: right;
 }
 
 .arrow {
@@ -81,7 +80,6 @@ header {
 }
 
 .form-container {
-    flex: 1;
     background-color: #00cfc8;
     padding: 20px;
     border-radius: 10px;
