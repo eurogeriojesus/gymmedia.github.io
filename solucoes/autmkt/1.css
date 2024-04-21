@@ -125,3 +125,8 @@ header {
 .box:hover {
     background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
 }
+@media (min-width: 768px) {
+    .header-buttons button {
+        display: none;
+    }
+}
