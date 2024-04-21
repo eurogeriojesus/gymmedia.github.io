@@ -5,8 +5,8 @@ body {
 }
 
 #full-page {
-    background-color: #381f59; /* Alterando a cor de fundo da tela inteira */
-    color: white; /* Alterando a cor do texto para branco */
+    background-color: #381f59;
+    color: white;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 
 .boxes-container {
     display: flex;
-    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
+    margin-bottom: 20px;
 }
 
 .box {
@@ -23,7 +23,7 @@ h1 {
     height: 200px;
     background-color: #502c7f;
     border-radius: 20px;
-    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados */
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,14 +65,14 @@ header {
 .content-container {
     display: flex;
     align-items: flex-start;
-    max-width: 1200px; /* ajuste de largura máxima */
-    margin: 0 auto; /* centralizar horizontalmente */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .additional-text {
-    width: 100%; /* largura total */
-    margin-top: 20px; /* espaço acima das frases adicionais */
-    text-align: center; /* centralizar o texto */
+    width: calc(50% - 220px);
+    margin-top: 20px;
+    text-align: left;
 }
 
 .arrow {
@@ -80,8 +80,8 @@ header {
 }
 
 .form-container {
-    width: 50%; /* largura do formulário */
-    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
+    width: 50%;
+    background-color: #00cfc8;
     padding: 20px;
     border-radius: 10px;
 }
@@ -95,7 +95,7 @@ header {
 #contact-form input[type="email"],
 #contact-form select,
 #contact-form input[type="url"] {
-    width: calc(100% - 22px); /* ajuste da largura para compensar o padding e a borda */
+    width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #381f59;
@@ -115,41 +115,43 @@ header {
 #contact-form input[type="submit"]:hover {
     background-color: #5a3b7e;
 }
-/* Efeito de transição nos quadrados de texto */
+
 .box {
     transition: background-color 0.3s ease;
 }
 
 .box:hover {
-    background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
+    background-color: #201233;
 }
 
 /* Adicionando media queries para tornar o layout responsivo */
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column; /* Altera a direção do flexbox para coluna em dispositivos menores */
+        flex-direction: column;
     }
 
     .form-container,
     .left-content {
-        width: 100%; /* Define a largura para 100% em dispositivos menores */
+        width: 100%;
     }
 
     .box {
-        margin-right: 0; /* Remove a margem à direita nos quadrados em dispositivos menores */
-        margin-bottom: 20px; /* Adiciona margem inferior para separar os quadrados em dispositivos menores */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .header-buttons button {
-        margin-left: 0; /* Remove a margem à esquerda nos botões do cabeçalho em dispositivos menores */
-        margin-bottom: 10px; /* Adiciona margem inferior para separar os botões do cabeçalho em dispositivos menores */
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .header-buttons {
-        flex-direction: column; /* Altera a direção do flexbox para coluna nos botões do cabeçalho em dispositivos menores */
+        flex-direction: column;
     }
 
     .additional-text {
-        text-align: left; /* Alinha o texto adicional à esquerda em dispositivos menores */
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
     }
 }
