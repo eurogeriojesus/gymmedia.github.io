@@ -125,10 +125,9 @@ header {
 }
 
 /* Adicionando media queries para tornar o layout responsivo */
-
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        flex-direction: column; /* Altera a direção do flexbox para coluna em dispositivos menores */
     }
 
     .form-container,
