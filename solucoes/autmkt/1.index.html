@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="1.css">
     <style>
         /* Seu CSS personalizado aqui, se necessário */
-        /* Ajuste para o formulário ocupar todo o lado direito */
-        .form-container {
-            width: 100%;
-            max-width: 400px; /* Defina a largura máxima do formulário */
-            margin-left: auto; /* Alinhar o formulário à direita */
-            margin-right: 10px; /* Adicionar um pequeno espaçamento à direita */
+        /* Ajuste para o formulário ocupar todo o lado direito apenas na versão web */
+        @media (min-width: 768px) {
+            .form-container {
+                width: 100%;
+                max-width: 100%; /* Defina a largura máxima do formulário */
+            }
         }
     </style>
 </head>
