@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Gym Media</title>
-    <link rel="stylesheet" href="blog.css"> <!-- Adapte o nome do arquivo CSS conforme necessário -->
+    <link rel="stylesheet" href="5.css"> <!-- Adapte o nome do arquivo CSS conforme necessário -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG7D1HKF8W"></script>
     <script>
