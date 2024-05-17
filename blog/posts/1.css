@@ -73,6 +73,23 @@ header {
     color: #009c97;
 }
 
+.blog-post .post-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.blog-post .post-intro {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
