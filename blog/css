@@ -1,1 +1,132 @@
+/* Estilos CSS aqui */
+body {
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+    margin: 0;
+    padding: 0;
+    background-color: #03fff6; /* Cor de fundo padrão */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #381f59; /* Cor principal da Gym Media */
+    color: #fff;
+    padding: 10px;
+    display: flex; /* Permite o uso de flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do espaço disponível */
+}
+
+header img {
+    width: 70px; /* Aumenta o tamanho do logo */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    /* Estilos padrão */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.banner {
+    background-image: url(''); /* Removendo a imagem de fundo */
+    background-color: transparent; /* Removendo a cor de fundo */
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
+}
+
+.frase-banner {
+    position: relative; /* Permite posicionar o gif dentro do banner */
+    width: 100%; /* Garante que o gif ocupe toda a largura do banner */
+    height: 100vh; /* Faz com que o banner tenha a altura da tela inteira */
+    background: url('colagem.gif') no-repeat center center fixed; /* Define o gif como plano de fundo */
+    background-size: cover; /* Garante que o gif cubra todo o elemento */
+}
+
+.frase-banner h1 {
+    font-weight: 800; /* Definindo o peso da fonte como bold */
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    position: absolute; /* Permite posicionar o texto sobre o gif */
+    top: 50%; /* Alinha o texto verticalmente no centro */
+    left: 50%; /* Alinha o texto horizontalmente no centro */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+}
+
+.block {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff; /* Cor do texto padrão */
+    text-align: center; /* Centraliza o texto */
+}
+
+.block h2 {
+    margin-top: 0;
+    color: #381f59; /* Cor mais escura da paleta da Gym Media */
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post {
+    width: calc(30% - 20px); /* Ajusta a largura dos posts */
+    margin-bottom: 20px;
+    background-color: #fff; /* Cor de fundo dos posts */
+    border-radius: 10px;
+    overflow: hidden; /* Evita que os cantos arredondados sejam afetados pelos elementos internos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-info {
+    padding: 20px;
+}
+
+.post-info h3 {
+    margin-top: 0;
+}
+
+.post-info p {
+    margin-bottom: 0;
+}
+
+.post-info a.button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #009c97;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.post-info a.button:hover {
+    background-color: #007872;
+}
 
