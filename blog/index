@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Gym Media</title>
+    <link rel="stylesheet" href="blog.css"> <!-- Adapte o nome do arquivo CSS conforme necessário -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG7D1HKF8W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SG7D1HKF8W');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog Gym Media</h1>
+        <p>Dicas e insights de marketing digital para empresas do mundo fitness e wellness</p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#soluções">Soluções</a> |
+            <a href="#quem-somos">Quem somos</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="banner gif-background"> <!-- Classe "gif-background" para o banner -->
+            <div class="frase-banner">
+                <h1 style="font-weight: 800; font-size: 2em;">Bem-vindo ao Blog Gym Media!</h1> <!-- Texto personalizado -->
+            </div>
+        </section>
+
+        <section id="posts" class="block"> <!-- Seção de posts -->
+            <h2>Últimos Posts</h2>
+            <div class="post">
+                <div class="post-thumbnail">
+                    <img src="post1.jpg" alt="Imagem do primeiro post"> <!-- Imagem do post -->
+                </div>
+                <div class="post-info">
+                    <h3>Título do Primeiro Post</h3> <!-- Título do post -->
+                    <p>Descrição breve do primeiro post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- Descrição do post -->
+                    <a href="post1.html">Leia mais</a> <!-- Link para o post completo -->
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-thumbnail">
+                    <img src="post2.jpg" alt="Imagem do segundo post"> <!-- Imagem do post -->
+                </div>
+                <div class="post-info">
+                    <h3>Título do Segundo Post</h3> <!-- Título do post -->
+                    <p>Descrição breve do segundo post. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <!-- Descrição do post -->
+                    <a href="post2.html">Leia mais</a> <!-- Link para o post completo -->
+                </div>
+            </div>
+            <!-- Adicione mais posts conforme necessário -->
+        </section>
+    </div>
+
+    <footer>
+        <p class="copyright-text">© 2024 Blog Gym Media. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="blog.js"></script> <!-- Adapte o nome do arquivo JS conforme necessário -->
+</body>
+</html>
 
