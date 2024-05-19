@@ -80,15 +80,18 @@ header img {
 
 .post {
     width: calc(30% - 20px);
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Aumenta a margem inferior para acomodar o botão "Leia mais" */
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Centraliza o conteúdo do post */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.post img {
+.post-thumbnail img {
     width: 100%;
     height: auto;
     display: block;
@@ -96,6 +99,7 @@ header img {
 
 .post-info {
     padding: 20px;
+    width: 100%; /* Garante que o conteúdo de informações ocupe toda a largura do bloco */
 }
 
 .post-info h3 {
@@ -106,7 +110,7 @@ header img {
     margin-bottom: 10px; /* Reduz o espaçamento abaixo da descrição */
 }
 
-.post-info a {
+.read-more {
     display: block;
     margin-top: 10px; /* Adiciona espaçamento acima do link "Leia mais" */
     padding: 10px 20px;
@@ -117,9 +121,11 @@ header img {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    position: relative;
+    top: 10px; /* Ajusta a posição do botão "Leia mais" */
 }
 
-.post-info a:hover {
+.read-more:hover {
     background-color: #007872;
 }
 
