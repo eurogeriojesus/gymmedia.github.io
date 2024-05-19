@@ -3,126 +3,98 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #03fff6;
+    background-color: #f3f3f3;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 header {
     background-color: #381f59;
     color: #fff;
-    padding: 5px; /* Diminui a altura do cabeçalho */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 15px 0;
+    text-align: center;
 }
 
-header img {
-    width: 70px;
-    margin-right: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 .banner {
-    background-image: url('');
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    padding: 0;
-    overflow: hidden;
-    height: 150px; /* Diminui a altura do banner */
-}
-
-.frase-banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.frase-banner h1 {
-    font-weight: 800;
-    font-size: 2em;
-    position: absolute;
-    top: 40%; /* Ajusta o texto do banner para centralizar verticalmente */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 0; /* Remove margem adicional */
-}
-
-.frase-banner p {
-    position: absolute;
-    top: 60%; /* Ajusta o texto "Bem-vindo(a)" para ficar abaixo do título */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 0; /* Remove margem adicional */
-}
-
-.block {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-.block h2 {
-    margin-top: 0;
+    background-color: #03fff6;
     color: #381f59;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.banner h2 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+.banner p {
+    margin: 0;
+    font-size: 1.2em;
 }
 
 #posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 40px 0;
+}
+
+#posts h2 {
+    text-align: center;
+    color: #381f59;
+    margin-bottom: 40px;
 }
 
 .post {
-    width: calc(30% - 20px);
-    margin-bottom: 40px; /* Aumenta a margem inferior para acomodar o botão "Leia mais" */
     background-color: #fff;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centraliza o conteúdo do post */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
 }
 
 .post-thumbnail img {
     width: 100%;
-    height: auto;
     display: block;
+    border-bottom: 5px solid #381f59;
 }
 
 .post-info {
     padding: 20px;
-    width: 100%; /* Garante que o conteúdo de informações ocupe toda a largura do bloco */
+    text-align: left;
 }
 
 .post-info h3 {
     margin-top: 0;
+    color: #381f59;
+    font-size: 1.5em;
 }
 
 .post-info p {
-    margin-bottom: 10px; /* Reduz o espaçamento abaixo da descrição */
+    margin-bottom: 10px;
+    color: #555;
 }
 
 .read-more {
-    display: block;
-    margin-top: 10px; /* Adiciona espaçamento acima do link "Leia mais" */
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #009c97;
     color: #fff;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    position: relative;
-    top: 10px; /* Ajusta a posição do botão "Leia mais" */
 }
 
 .read-more:hover {
@@ -130,8 +102,10 @@ header img {
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #381f59;
     color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
+
