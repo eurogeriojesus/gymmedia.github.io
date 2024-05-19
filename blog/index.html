@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Gym Media</title>
-    <link rel="stylesheet" href="5.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Blog Gym Media</h1>
+        <div class="container">
+            <h1>Blog Gym Media</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <section id="home" class="banner gif-background">
-            <div class="frase-banner">
-                <h1 style="font-weight: 800; font-size: 2em;">Dicas e insights de marketing digital para empresas do mundo fitness e wellness</h1>
-                <p>Bem-vindo(a) ao Blog Gym Media!</p>
-            </div>
-        </section>
+    <section class="banner">
+        <div class="container">
+            <h2>Dicas e insights de marketing digital para empresas do mundo fitness e wellness</h2>
+            <p>Bem-vindo(a) ao Blog Gym Media!</p>
+        </div>
+    </section>
 
-        <section id="posts" class="block">
+    <div class="container">
+        <section id="posts">
             <h2>Últimos Posts</h2>
             <div class="post">
                 <div class="post-thumbnail">
@@ -28,8 +30,8 @@
                 <div class="post-info">
                     <h3>Como Atrair Mais Clientes e Vender Suplementos com Eficiência</h3>
                     <p>Descrição breve do primeiro post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a class="read-more" href="https://gymmedia.com.br/blog/posts/Como-Atrair-Mais-Clientes-e-Vender-Suplementos-com-Efici%C3%AAncia.index.html">Leia mais</a>
                 </div>
-                <a class="read-more" href="https://gymmedia.com.br/blog/posts/Como-Atrair-Mais-Clientes-e-Vender-Suplementos-com-Efici%C3%AAncia.index.html">Leia mais</a>
             </div>
 
             <div class="post">
@@ -39,15 +41,17 @@
                 <div class="post-info">
                     <h3>Moda Fitness: Como atrair mais clientes e vender melhor</h3>
                     <p>Descrição breve do segundo post. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="read-more" href="post2.html">Leia mais</a>
                 </div>
-                <a class="read-more" href="post2.html">Leia mais</a>
             </div>
             <!-- Adicione mais posts conforme necessário -->
         </section>
     </div>
 
     <footer>
-        <p>© 2024 Blog Gym Media. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>© 2024 Blog Gym Media. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
