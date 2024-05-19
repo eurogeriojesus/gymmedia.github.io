@@ -109,3 +109,16 @@ footer {
     margin-top: 40px;
 }
 
+/* Media Queries para desktop */
+@media (min-width: 768px) {
+    #posts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .post {
+        flex: 1 1 calc(33.333% - 20px);
+        margin-bottom: 20px;
+    }
+}
