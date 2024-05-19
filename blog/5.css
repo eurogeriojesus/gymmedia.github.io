@@ -122,3 +122,47 @@ footer {
         margin-bottom: 20px;
     }
 }
+#newsletter {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#newsletter h2 {
+    margin-bottom: 20px;
+    color: #381f59;
+}
+
+/* Formulário */
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-right: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #009c97;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #007872;
+}
