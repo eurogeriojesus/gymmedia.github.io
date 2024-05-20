@@ -24,3 +24,8 @@ function toggleMenu() {
 
 // Evento para escutar cliques no botão do menu de navegação responsivo
 document.getElementById('btn-menu').addEventListener('click', toggleMenu);
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+});
+
