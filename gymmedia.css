@@ -1,195 +1,5 @@
 /* Estilos CSS aqui */
 body {
-    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
-    margin: 0;
-    padding: 0;
-    background-color: #03fff6; /* Cor de fundo padrão */
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #381f59; /* Cor principal da Gym Media */
-    color: #fff;
-    padding: 10px;
-    display: flex; /* Permite o uso de flexbox */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-between; /* Distribui os itens uniformemente ao longo do espaço disponível */
-}
-
-header img {
-    width: 70px; /* Aumenta o tamanho do logo */
-    margin-right: 10px; /* Espaçamento à direita */
-}
-
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 10px; /* Espaçamento entre os botões */
-}
-
-nav a {
-    text-decoration: none;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-}
-
-nav a.menu-button {
-    background-color: #00cfc8; /* Cor dos botões */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
-
-nav a.menu-button:hover {
-    background-color: #00b3ad; /* Cor mais escura ao passar o mouse */
-}
-
-.banner {
-    background-image: url(''); /* Removendo a imagem de fundo */
-    background-color: transparent; /* Removendo a cor de fundo */
-    color: #fff;
-    text-align: center;
-    padding: 0;
-    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
-}
-
-.frase-banner {
-    position: relative; /* Permite posicionar o gif dentro do banner */
-    width: 100%; /* Garante que o gif ocupe toda a largura do banner */
-    height: 100vh; /* Faz com que o banner tenha a altura da tela inteira */
-    background: url('colagem.gif') no-repeat center center fixed; /* Define o gif como plano de fundo */
-    background-size: cover; /* Garante que o gif cubra todo o elemento */
-}
-
-.frase-banner h1 {
-    font-weight: 800; /* Definindo o peso da fonte como bold */
-    font-size: 2em; /* Aumenta o tamanho da fonte */
-    position: absolute; /* Permite posicionar o texto sobre o gif */
-    top: 50%; /* Alinha o texto verticalmente no centro */
-    left: 50%; /* Alinha o texto horizontalmente no centro */
-    transform: translate(-50%, -50%); /* Centraliza o texto */
-}
-
-.servico {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.servico-item {
-    width: calc(50% - 20px); /* 50% do espaço disponível com margens */
-    margin-bottom: 20px;
-    border: 1px solid #381f59; /* Altera a cor da borda */
-    border-radius: 10px;
-    overflow: hidden; /* Evita que os cantos arredondados sejam afetados pelos elementos internos */
-}
-
-.servico-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.servico-info {
-    padding: 20px;
-}
-
-.servico-info h3 {
-    margin-top: 0;
-}
-
-.servico-info ul {
-    padding: 0;
-    margin: 10px 0;
-}
-
-.servico-info ul li {
-    list-style: none;
-}
-
-.servico-info .button {
-    padding: 10px 20px;
-    background-color: #006eff; /* Cor azul do estilo da página */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none; /* Remove o sublinhado dos links */
-    display: inline-block; /* Garante que o botão tenha a largura do conteúdo */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.servico-info .button:hover {
-    background-color: #005acc; /* Cor azul mais escura ao passar o mouse */
-}
-
-.block {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #fff; /* Cor do texto padrão */
-    text-align: center; /* Centraliza o texto */
-}
-
-.block h2 {
-    margin-top: 0;
-    color: #381f59; /* Cor mais escura da paleta da Gym Media */
-}
-
-#soluções {
-    background-color: #502c7f; /* Cor terciária da Gym Media */
-    text-align: center; /* Centraliza o texto */
-}
-
-#quem-somos {
-    background-color: #201233; /* Nova cor de fundo para a seção "Quem Somos" */
-}
-
-#contato {
-    position: relative; /* Define a posição relativa para o botão de contato */
-}
-
-.contato-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contato-form {
-    width: 45%; /* Ajusta a largura do formulário */
-}
-
-.social-icons {
-    width: 45%; /* Ajusta a largura dos ícones de mídia social */
-    display: flex;
-    justify-content: space-around;
-}
-
-.social-icons a img {
-    width: 40px; /* Ajusta o tamanho dos ícones */
-    height: auto;
-}
-/* Estilos CSS aqui */
-body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -221,17 +31,6 @@ nav {
     margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
 nav a {
     color: #fff;
     text-decoration: none;
@@ -239,6 +38,7 @@ nav a {
     background-color: #00cfc8;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-right: 10px;
 }
 
 nav a:hover {
@@ -247,32 +47,13 @@ nav a:hover {
 
 .menu-toggle {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    nav.active ul {
-        display: flex;
-    }
-    .menu-toggle {
-        display: flex;
+    nav a {
+        padding: 8px 16px; /* Reduz o padding dos botões */
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+        display: inline-block; /* Permite que os botões fiquem lado a lado */
+        width: 45%; /* Define a largura dos botões */
     }
 }
-
-/* Resto do CSS permanece o mesmo */
