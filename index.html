@@ -11,7 +11,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-SG7D1HKF8W');
     </script>
 </head>
@@ -19,7 +18,12 @@
     <header>
         <img src="GM_Logotipo.png" alt="Gym Media Logo">
         <nav>
-            <ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="menu">
                 <li><a href="#home" class="menu-button">Home</a></li>
                 <li><a href="#solucoes" class="menu-button">Soluções</a></li>
                 <li><a href="https://gymmedia.com.br/blog/" class="menu-button">Blog</a></li>
@@ -30,9 +34,9 @@
     </header>
 
     <div class="container">
-        <section id="home" class="banner gif-background"> <!-- Adicionando a classe "gif-background" aqui -->
+        <section id="home" class="banner gif-background">
             <div class="frase-banner">
-                <h1 style="font-weight: 800; font-size: 2em;">A parceira de marketing para as Áreas de Fitness e Wellness</h1>
+                <h1>A parceira de marketing para as Áreas de Fitness e Wellness</h1>
             </div>
         </section>
     </div>
@@ -78,8 +82,8 @@
 
     <section id="contato" class="block">
         <div class="contato-wrapper">
-            <h2 style="text-align: center;">Siga a gente nas redes sociais</h2> <!-- Texto centralizado -->
-            <div class="social-icons" style="text-align: center;"> <!-- Texto e ícones centralizados -->
+            <h2 style="text-align: center;">Siga a gente nas redes sociais</h2>
+            <div class="social-icons" style="text-align: center;">
                 <a href="https://www.instagram.com/somosgymmedia/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
                 <a href="https://www.linkedin.com/company/gym-media-agency/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
             </div>
@@ -87,7 +91,7 @@
     </section>
 
     <footer>
-        <p class="copyright-text" style="text-align: center;">© 2024 Gym Media. Todos os direitos reservados.</p> <!-- Texto centralizado -->
+        <p class="copyright-text" style="text-align: center;">© 2024 Gym Media. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
