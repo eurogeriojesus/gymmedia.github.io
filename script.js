@@ -28,3 +28,20 @@ document.getElementById('btn-menu').addEventListener('click', toggleMenu);
 document.getElementById('menu-toggle').addEventListener('click', function() {
     document.querySelector('nav').classList.toggle('active');
 });
+
+// JavaScript para o carrossel
+let currentIndex = 0;
+const carrossel = document.querySelector('.carrossel');
+const images = document.querySelectorAll('.carrossel img');
+const totalImages = images.length;
+
+function showNextImage() {
+    currentIndex++;
+    if (currentIndex >= totalImages) {
+        currentIndex = 0;
+    }
+    const translateX = -currentIndex * 100;
+    carrossel.style.transform = `translateX(${translateX}%)`;
+}
+
+setInterval(showNextImage, 3000);
