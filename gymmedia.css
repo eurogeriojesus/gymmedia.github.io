@@ -64,10 +64,12 @@ nav a:hover {
 /* Estilos para o banner */
 .banner {
     height: 400px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .video-background {
@@ -84,18 +86,11 @@ nav a:hover {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1000;
+    z-index: -1;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-     background: url('videomarketing.mp4') no-repeat; /* Adicione a URL do vídeo aqui */
-
-    <video muted loop autoplay>
-  <source src="videomarketing.mp4" type="video/mp4">
-  <source src="videomarketing.webm" type="video/webm">
-  Seu navegador não suporta a tag de vídeo.
-</video>
 }
 
 .frase-banner {
