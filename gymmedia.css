@@ -219,30 +219,88 @@ footer {
   }
 }
 .quem-somos {
-  .quem-somos {
-  padding: 40px 0;
-  text-align: center;
+    padding: 40px 0;
+    text-align: center;
 }
 
 .quem-somos h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #381f59;
-  animation: entrance 1s ease-in-out forwards;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #381f59;
 }
 
-@keyframes entrance {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.quem-somos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.quem-somos p {
-  color: #666;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.quem-somos-item {
+    width: calc(33.33% - 40px);
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.quem-somos .destaque {
-  font-weight: bold;
-  color: #00cfc8;
+.quem-somos-item:hover {
+    transform: scale(1.05);
+}
+
+.quem-somos-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.quem-somos-item:hover .quem-somos-img {
+    opacity: 0.7;
+}
+
+.quem-somos-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.quem-somos-item:hover .quem-somos-overlay {
+    opacity: 1;
+}
+
+.quem-somos-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.quem-somos-item:hover .quem-somos-text {
+    opacity: 1;
+}
+
+.quem-somos-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.quem-somos-text p {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .quem-somos-item {
+        width: 100%;
+    }
 }
