@@ -97,15 +97,17 @@ nav a:hover {
   z-index: 1;
 }
 
-.frase-banner {
-    position: relative;
-    z-index: 1; /* Certifica-se de que o conteúdo de texto esteja acima do carrossel */
+.hero-content h1 {
+  font-size: 3em; /* Aumenta o tamanho da frase na versão desktop */
+  font-weight: bold;
+  color: #fff;
 }
 
-.frase-banner h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #fff;
+@media screen and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em; /* Ajusta o tamanho da frase na versão mobile */
+    padding: 0 20px; /* Adiciona padding para evitar que o texto toque as bordas da tela */
+  }
 }
 
 /* Estilos para as seções de conteúdo */
