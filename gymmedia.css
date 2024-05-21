@@ -178,6 +178,31 @@ nav a:hover {
     }
 }
 
+/* Estilos para a seção "Quem Somos" */
+#quem-somos {
+    padding: 40px 0;
+    text-align: center;
+    background-image: url('imagens/fitness22.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Altera a cor do texto para branco para melhor visibilidade sobre a imagem */
+}
+
+#quem-somos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#quem-somos p, #quem-somos li {
+    color: #fff;
+}
+
+#quem-somos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 /* Estilos para o rodapé */
 footer {
     background-color: #222;
