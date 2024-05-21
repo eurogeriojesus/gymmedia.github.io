@@ -188,25 +188,33 @@ nav a:hover {
 #quem-somos {
     padding: 40px 0;
     text-align: center;
-    background-image: url('caminho/para/sua/imagem.jpg'); /* Caminho para a imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    color: #fff; /* Altera a cor do texto para branco para melhor visibilidade sobre a imagem */
+    background-color: #f0f0f0; /* Cor de fundo suave */
 }
 
-#quem-somos h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #fff;
+.quem-somos-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#quem-somos p, #quem-somos li {
-    color: #fff;
+.quem-somos-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
 }
 
-#quem-somos ul {
-    list-style: none;
-    padding-left: 0;
+.quem-somos-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.quem-somos-image img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Estilos para o rodapé */
