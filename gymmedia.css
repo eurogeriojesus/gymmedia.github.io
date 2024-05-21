@@ -185,81 +185,13 @@ footer {
     padding: 40px 0;
     text-align: center;
 }
-
-.quem-somos h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #381f59;
-}
-
-.quem-somos-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.quem-somos-item {
-    width: calc(33.33% - 40px); /* 3 colunas na versão desktop */
-    margin-bottom: 40px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.quem-somos-item:hover {
-    transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
-}
-
-.quem-somos-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: opacity 0.3s ease;
-}
-
-.quem-somos-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex; /* Centraliza o conteúdo verticalmente */
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px; /* Bordas arredondadas */
-}
-
-.quem-somos-item:hover .quem-somos-overlay {
-    opacity: 1;
-}
-
-.quem-somos-text {
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.quem-somos-text h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #00cfc8;
-}
-
-.quem-somos-text p {
-    font-size: 1em;
-}
-
-/* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
-    .quem-somos-item {
-        width: calc(50% - 20px); /* 2 colunas na versão mobile */
+    .servico {
+        flex-direction: column; /* Altera a direção do flex container para coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    .servico-item {
+        width: 100%; /* Define a largura total para cada item */
     }
 }
-
-@media screen
