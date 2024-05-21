@@ -29,12 +29,6 @@ header {
 }
 
 header img {
-    width: 70px;
-}
-
-/* Novos estilos para o logo */
-/* Ajusta o tamanho do logo */
-header img {
     width: 100px;
     height: auto; /* Mantém a proporção da imagem */
 }
@@ -112,8 +106,8 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
     .hero-content h1 {
-    font-size: 2em; /* Ajusta o tamanho da frase na versão mobile */
-    padding: 0 20px; /* Adiciona padding para evitar que o texto toque as bordas da tela */
+        font-size: 2em; /* Ajusta o tamanho da frase na versão mobile */
+        padding: 0 20px; /* Adiciona padding para evitar que o texto toque as bordas da tela */
     }
 }
 
@@ -172,19 +166,7 @@ nav a:hover {
     background-color: #00b3ad;
 }
 
-/* Estilos para o rodapé */
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Estilos para a seção "Quem Somos" */
-.quem-somos {
-    padding: 40px 0;
-    text-align: center;
-}
+/* Ajuste para a visualização móvel */
 @media screen and (max-width: 768px) {
     .servico {
         flex-direction: column; /* Altera a direção do flex container para coluna */
@@ -194,4 +176,12 @@ footer {
     .servico-item {
         width: 100%; /* Define a largura total para cada item */
     }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
