@@ -1,272 +1,277 @@
 /* Estilos CSS para o site Gym Media */
 /* Reset de estilos */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  padding-top: 80px; /* Adiciona padding para evitar que o conteúdo fique escondido atrás do cabeçalho fixo */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  padding-top: 80px; /* Adiciona padding para evitar que o conteúdo fique escondido atrás do cabeçalho fixo */
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Estilos para o cabeçalho */
 header {
-  background-color: #381f59;
-  color: #fff;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed; /* Torna o cabeçalho fixo */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+  background-color: #381f59;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; /* Torna o cabeçalho fixo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 header img {
-  width: 100px;
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100px;
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 nav {
-  display: flex;
-  align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav li {
-  margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #00b3ad;
+  color: #00b3ad;
 }
 
 .menu-toggle {
-  display: none;
+  display: none;
 }
 
 /* Estilos para o banner */
 .banner {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin-top: -20px; /* Remove o espaço padrão entre o header e a seção */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px; /* Remove o espaço padrão entre o header e a seção */
 }
 
 .hero-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 .hero-background video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero-content {
-  z-index: 1;
+  z-index: 1;
 }
 
 .hero-content h1 {
-  font-size: 3em; /* Aumenta o tamanho da frase na versão desktop */
-  font-weight: bold;
-  color: #fff;
+  font-size: 3em; /* Aumenta o tamanho da frase na versão desktop */
+  font-weight: bold;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2em; /* Ajusta o tamanho da frase na versão mobile */
-    padding: 0 20px; /* Adiciona padding para evitar que o texto toque as bordas da tela */
-  }
+  .hero-content h1 {
+    font-size: 2em; /* Ajusta o tamanho da frase na versão mobile */
+    padding: 0 20px; /* Adiciona padding para evitar que o texto toque as bordas da tela */
+  }
 }
 
 /* Estilos para as seções de conteúdo */
 .block {
-  padding: 40px 0;
-  text-align: center;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .block h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #381f59;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #381f59;
 }
 
 .servico {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .servico-item {
-  width: calc(50% - 40px);
-  margin-bottom: 40px;
+  width: calc(50% - 40px);
+  margin-bottom: 40px;
 }
 
 .servico-info {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .servico-info h3 {
-  color: #381f59;
-  margin-bottom: 10px;
+  color: #381f59;
+  margin-bottom: 10px;
 }
 
 .servico-info p {
-  color: #666;
-  margin-bottom: 20px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .servico-info .button {
-  background-color: #00cfc8;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  background-color: #00cfc8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .servico-info .button:hover {
-  background-color: #00b3ad;
+  background-color: #00b3ad;
 }
 
 /* Ajuste para a visualização móvel */
 @media screen and (max-width: 768px) {
-  .servico {
-    flex-direction: column; /* Altera a direção do flex container para coluna */
-    align-items: center; /* Centraliza os itens na coluna */
-  }
+  .servico {
+    flex-direction: column; /* Altera a direção do flex container para coluna */
+    align-items: center; /* Centraliza os itens na coluna */
+  }
 
-  .servico-item {
-    width: 100%; /* Define a largura total para cada item */
-  }
+  .servico-item {
+    width: 100%; /* Define a largura total para cada item */
+  }
 }
 
 /* Estilos para a seção "Quem Somos" */
 #quem-somos {
-  padding: 40px 0;
-  text-align: center;
-  background-color: #00cfc8; /* Cor de fundo */
+  padding: 40px 0;
+  text-align: center;
+  background-color: #00cfc8; /* Cor de fundo */
 }
 
 .quem-somos-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
-/* Ajuste do texto à esquerda */
 .quem-somos-text {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  padding: 20px;
-  color: #fff; /* Cor do texto */
-  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
-  font-size: 1.5em; /* Aumenta ainda mais o tamanho do texto */
-}
-
-/* Retirada do destaque da primeira frase (assumindo que era negrito) */
-.quem-somos-text p:first-child {
-  font-weight: normal; /* Remove o negrito */
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
+  color: #fff; /* Cor do texto */
+  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
+  font-size: 1.2em; /* Aumenta o tamanho do texto */
 }
 
 .quem-somos-image {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
 }
 
 .quem-somos-image img {
-  width: 100%;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* Diminuição do tamanho da fonte dos valores */
 .quem-somos-valores {
-  padding: 20px;
-  color: #fff; /* Cor do texto */
-  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
-  font-size: 0.9em; /* Diminui o tamanho da fonte */
+  padding: 20px;
+  color: #fff; /* Cor do texto */
+  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
+  font-size: 1.2em; /* Aumenta o tamanho do texto */
 }
 
 .quem-somos-valores h3 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #fff; /* Cor do título */
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #fff; /* Cor do título */
 }
 
 .quem-somos-valores ul {
-  list-style: none;
-  padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .quem-somos-valores li {
-  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .quem-somos-valores strong {
-  color: #fff; /* Cor do texto em negrito */
+  color: #fff; /* Cor do texto em negrito */
 }
 
 /* Estilos para o rodapé */
 footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* Responsividade para a seção "Quem Somos" - Mantenha as alterações para mobile */
+/* Responsividade para a seção "Quem Somos" */
 @media screen and (max-width: 768px) {
-  .quem-somos-content {
-    flex-direction: column; /* Alinha os itens em coluna na versão mobile */
-    text-align: center;
-  }
+  .quem-somos-content {
+    flex-direction: column; /* Alinha os itens em coluna na versão mobile */
+    text-align: center;
+  }
 
-  .quem-somos-
+  .quem-somos-text, .quem-somos-valores {
+    text-align: center; /* Centraliza o texto na versão mobile */
+    font-size: 1em; /* Ajusta o tamanho do texto na versão mobile */
+  }
+
+  .quem-somos-valores {
+    margin-top: 20px;
+  }
+}
+expand_more
+
+Mostrar rascunhos
+expand_more
