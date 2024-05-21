@@ -30,18 +30,16 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 });
 
 // JavaScript para o carrossel
-let currentIndex = 0;
 const carrossel = document.querySelector('.carrossel');
 const images = document.querySelectorAll('.carrossel img');
-const totalImages = images.length;
+let index = 0;
 
-function showNextImage() {
-    currentIndex++;
-    if (currentIndex >= totalImages) {
-        currentIndex = 0;
+function moveCarrossel() {
+    index++;
+    if (index >= images.length) {
+        index = 0;
     }
-    const translateX = -currentIndex * 100;
-    carrossel.style.transform = `translateX(${translateX}%)`;
+    carrossel.style.transform = `translateX(${-index * 100}%)`;
 }
 
-setInterval(showNextImage, 3000);
+setInterval(moveCarrossel, 3000);
