@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f8f8;
     color: #333;
+    padding-top: 80px; /* Adiciona padding para evitar que o conteúdo fique escondido atrás do cabeçalho fixo */
 }
 
 .container {
@@ -26,6 +27,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed; /* Torna o cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 header img {
@@ -182,7 +188,7 @@ nav a:hover {
 #quem-somos {
     padding: 40px 0;
     text-align: center;
-    background-image: url('imagens/fitness22.jpg'); /* Caminho para a imagem de fundo */
+    background-image: url('caminho/para/sua/imagem.jpg'); /* Caminho para a imagem de fundo */
     background-size: cover;
     background-position: center;
     color: #fff; /* Altera a cor do texto para branco para melhor visibilidade sobre a imagem */
