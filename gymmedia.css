@@ -218,8 +218,6 @@ footer {
     width: 100%;
   }
 }
-
-/* Estilos para a seção "Quem Somos" */
 .quem-somos {
   .quem-somos {
   padding: 40px 0;
@@ -247,7 +245,4 @@ footer {
 .quem-somos .destaque {
   font-weight: bold;
   color: #00cfc8;
-}
-
-  }
 }
