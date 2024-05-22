@@ -205,7 +205,7 @@ nav a:hover {
   max-width: 600px;
   padding: 20px;
   color: #fff; /* Cor do texto */
-  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
+  text-align: center; /* Centraliza o texto para todas as versões */
   font-size: 1.5em; /* Aumenta o tamanho do texto */
 }
 
@@ -224,7 +224,7 @@ nav a:hover {
 .quem-somos-valores {
   padding: 20px;
   color: #fff; /* Cor do texto */
-  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
+  text-align: center; /* Centraliza o texto */
   font-size: 1em; /* Diminui o tamanho do texto */
 }
 
@@ -247,6 +247,13 @@ nav a:hover {
   color: #fff; /* Cor do texto em negrito */
 }
 
+/* Responsividade para centralizar o texto da seção "Quem Somos" apenas na versão mobile */
+@media screen and (max-width: 768px) {
+  .quem-somos-text {
+    text-align: center;
+  }
+}
+
 /* Estilos para o rodapé */
 footer {
   background-color: #222;
@@ -258,4 +265,10 @@ footer {
 /* Responsividade para a seção "Quem Somos" */
 @media screen and (max-width: 768px) {
   .quem-somos-content {
-    flex-direction: column; /*
+    flex-direction: column; /* Altera a direção do flex container para coluna */
+  }
+
+  .quem-somos-valores {
+    text-align: center; /* Centraliza o texto na versão mobile */
+  }
+}
