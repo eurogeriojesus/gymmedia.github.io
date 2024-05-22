@@ -259,6 +259,13 @@ nav a:hover {
   }
 }
 
+/* Centralizar texto na versão desktop */
+@media screen and (min-width: 769px) {
+  .quem-somos-valores {
+    text-align: center; /* Centraliza o texto na versão desktop */
+  }
+}
+
 /* Estilos para o rodapé */
 footer {
   background-color: #222;
