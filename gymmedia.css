@@ -205,8 +205,8 @@ nav a:hover {
   max-width: 600px;
   padding: 20px;
   color: #fff; /* Cor do texto */
-  text-align: center; /* Centraliza o texto para todas as versões */
-  font-size: 1.5em; /* Aumenta o tamanho do texto */
+  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
+  font-size: 1.5em; /* Tamanho padrão do texto */
 }
 
 .quem-somos-image {
@@ -250,7 +250,8 @@ nav a:hover {
 /* Responsividade para centralizar o texto da seção "Quem Somos" apenas na versão mobile */
 @media screen and (max-width: 768px) {
   .quem-somos-text {
-    text-align: center;
+    text-align: center; /* Centraliza o texto na versão mobile */
+    font-size: 1em; /* Reduz o tamanho da fonte na versão mobile */
   }
 }
 
