@@ -50,10 +50,7 @@
             margin: 10px;
             text-align: center;
             transition: background-color 0.3s ease;
-        }
-
-        .info-box:hover {
-            background-color: #381f59;
+            width: calc(33.33% - 20px);
         }
 
         .info-box img {
@@ -66,6 +63,22 @@
             font-size: 1.3em;
             font-weight: bold;
         }
+
+        .info-box:hover {
+            background-color: #381f59;
+        }
+
+        .info-box-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .additional-text {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body id="full-page">
@@ -77,69 +90,63 @@
     </header>
     <h1 class="text-center">Automação de Marketing</h1>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="boxes-container">
-                    <div class="info-box">
-                        <img src="path-to-your-image1.png" alt="Atraia potenciais clientes">
-                        <p>Atraia potenciais clientes</p>
-                    </div>
-                    <div class="info-box">
-                        <img src="path-to-your-image2.png" alt="Se relacione e qualifique a sua base">
-                        <p>Se relacione e qualifique a sua base</p>
-                    </div>
-                    <div class="info-box">
-                        <img src="path-to-your-image3.png" alt="Feche mais vendas">
-                        <p>Feche mais vendas</p>
-                    </div>
-                </div>
-                <div class="additional-text">
-                    <p style="font-size: 1.5em; text-align: left;">
-                        → Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.
-                    </p>
-                    <p style="font-size: 1.5em; text-align: left;">
-                        → Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.
-                    </p>
-                </div>
+        <div class="info-box-container">
+            <div class="info-box">
+                <img src="path-to-your-image1.png" alt="Atraia potenciais clientes">
+                <p>Atraia potenciais clientes</p>
             </div>
-            <div class="col-md-6">
-                <div class="form-container">
-                    <h2 id="form-title">FALE COM UM ESPECIALISTA</h2>
-                    <!-- Adicionando o atributo action para enviar os dados para o Formspree -->
-                    <form id="contact-form" action="https://formspree.io/f/xeqyvvqw" method="post">
-                        <label for="name">Nome:</label><br>
-                        <input type="text" id="name" name="name" class="form-control" required><br>
-
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" class="form-control" required><br>
-
-                        <label for="title">Cargo:</label><br>
-                        <select id="title" name="title" class="form-control" required>
-                            <option value="">Selecione...</option>
-                            <option value="CEO">CEO</option>
-                            <option value="Diretor">Diretor</option>
-                            <option value="Gerente">Gerente</option>
-                            <option value="Analista">Analista</option>
-                            <option value="Estagiário">Estagiário</option>
-                            <option value="Outros">Outros</option>
-                        </select><br>
-
-                        <label for="organization-website">Site da organização:</label><br>
-                        <input type="url" id="organization-website" name="organization-website" class="form-control"><br>
-
-                        <label for="title">Número de colaboradores:</label><br>
-                        <select id="title" name="title" class="form-control" required>
-                            <option value="">Selecione...</option>
-                            <option value="1 a 9">1 a 9</option>
-                            <option value="10 a 49">10 a 49</option>
-                            <option value="50 a 99">50 a 99</option>
-                            <option value="Mais de 100">Mais de 100</option>
-                        </select><br>
-
-                        <input type="submit" value="Enviar" class="btn btn-primary">
-                    </form>
-                </div>
+            <div class="info-box">
+                <img src="path-to-your-image2.png" alt="Se relacione e qualifique a sua base">
+                <p>Se relacione e qualifique a sua base</p>
             </div>
+            <div class="info-box">
+                <img src="path-to-your-image3.png" alt="Feche mais vendas">
+                <p>Feche mais vendas</p>
+            </div>
+        </div>
+        <div class="additional-text">
+            <p>
+                → Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.
+            </p>
+            <p>
+                → Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.
+            </p>
+        </div>
+        <div class="form-container">
+            <h2 id="form-title">FALE COM UM ESPECIALISTA</h2>
+            <!-- Adicionando o atributo action para enviar os dados para o Formspree -->
+            <form id="contact-form" action="https://formspree.io/f/xeqyvvqw" method="post">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" class="form-control" required><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" class="form-control" required><br>
+
+                <label for="title">Cargo:</label><br>
+                <select id="title" name="title" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="CEO">CEO</option>
+                    <option value="Diretor">Diretor</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Analista">Analista</option>
+                    <option value="Estagiário">Estagiário</option>
+                    <option value="Outros">Outros</option>
+                </select><br>
+
+                <label for="organization-website">Site da organização:</label><br>
+                <input type="url" id="organization-website" name="organization-website" class="form-control"><br>
+
+                <label for="title">Número de colaboradores:</label><br>
+                <select id="title" name="title" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="1 a 9">1 a 9</option>
+                    <option value="10 a 49">10 a 49</option
+                    <option value="50 a 99">50 a 99</option>
+                    <option value="Mais de 100">Mais de 100</option>
+                </select><br>
+
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </form>
         </div>
     </div>
     <footer>
