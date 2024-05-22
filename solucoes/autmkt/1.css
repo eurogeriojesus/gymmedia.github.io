@@ -54,18 +54,20 @@ header {
     margin: 0 auto; /* centralizar horizontalmente */
 }
 
-.additional-text {
-    width: 100%; /* largura total */
-    margin-top: 20px; /* espaço acima das frases adicionais */
-    text-align: center; /* centralizar o texto */
+.info-box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.arrow {
-    margin-right: 5px;
+.additional-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .form-container {
-    width: 50%; /* largura do formulário */
+    width: 100%; /* largura do formulário */
     background-color: #00cfc8; /* cor de fundo para destacar o formulário */
     padding: 20px;
     border-radius: 10px;
@@ -99,6 +101,7 @@ header {
 
 #contact-form input[type="submit"]:hover {
     background-color: #5a3b7e;
+
 }
 
 /* Efeito de transição nos quadrados de texto */
