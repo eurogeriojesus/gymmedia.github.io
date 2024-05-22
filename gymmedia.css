@@ -182,6 +182,10 @@ nav a:hover {
   .servico-item {
     width: 100%; /* Define a largura total para cada item */
   }
+
+  nav ul li:first-child {
+    display: none; /* Esconde o botão "Home" na versão mobile */
+  }
 }
 
 /* Estilos para a seção "Quem Somos" */
@@ -224,7 +228,7 @@ nav a:hover {
 .quem-somos-valores {
   padding: 20px;
   color: #fff; /* Cor do texto */
-  text-align: center; /* Centraliza o texto */
+  text-align: left; /* Centraliza o texto à esquerda na versão desktop */
   font-size: 1em; /* Diminui o tamanho do texto */
 }
 
