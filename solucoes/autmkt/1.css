@@ -13,28 +13,12 @@ h1 {
     text-align: center;
 }
 
-.boxes-container {
-    display: flex;
-    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
+.info-box {
+    transition: background-color 0.3s ease;
 }
 
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: #502c7f;
-    border-radius: 20px;
-    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box p {
-    color: white;
-    text-align: center;
-    margin: 10px;
-    font-size: 1.3em;
-    font-weight: bold;
+.info-box:hover {
+    background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
 }
 
 header {
@@ -118,15 +102,10 @@ header {
 }
 
 /* Efeito de transição nos quadrados de texto */
-.box {
+.info-box {
     transition: background-color 0.3s ease;
 }
 
-.box:hover {
+.info-box:hover {
     background-color: #201233; /* Mudando a cor de fundo ao passar o mouse */
-}
-@media (min-width: 768px) {
-    .header-buttons button {
-        display: none;
-    }
 }
