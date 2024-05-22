@@ -37,6 +37,35 @@
             text-align: center;
             margin-top: 30px; /* Adiciona espaçamento entre o conteúdo e o texto de direitos autorais */
         }
+
+        /* Estilo para os novos boxes com ícones e texto */
+        .info-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #502c7f;
+            color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .info-box:hover {
+            background-color: #381f59;
+        }
+
+        .info-box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body id="full-page">
@@ -51,13 +80,16 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="boxes-container">
-                    <div class="box">
+                    <div class="info-box">
+                        <img src="path-to-your-image1.png" alt="Atraia potenciais clientes">
                         <p>Atraia potenciais clientes</p>
                     </div>
-                    <div class="box">
+                    <div class="info-box">
+                        <img src="path-to-your-image2.png" alt="Se relacione e qualifique a sua base">
                         <p>Se relacione e qualifique a sua base</p>
                     </div>
-                    <div class="box">
+                    <div class="info-box">
+                        <img src="path-to-your-image3.png" alt="Feche mais vendas">
                         <p>Feche mais vendas</p>
                     </div>
                 </div>
