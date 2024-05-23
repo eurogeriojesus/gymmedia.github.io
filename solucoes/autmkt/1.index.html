@@ -1,156 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automação de Marketing</title>
-    <link rel="shortcut icon" href="gymmedialogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="1.css">
-    <style>
-        /* Seu CSS personalizado aqui, se necessário */
-        /* Ajuste para o espaçamento entre o título e os elementos abaixo na versão web */
-        @media (min-width: 768px) {
-            h1 {
-                margin-bottom: 30px; /* Adiciona um espaçamento maior na parte inferior do título */
-            }
-        }
-
-        /* Ajuste para o formulário na versão web ocupar todo o lado direito */
-        @media (min-width: 768px) {
-            .form-container {
-                width: 100%;
-                max-width: 100%; /* Defina a largura máxima do formulário */
-            }
-        }
-
-        /* Ajuste para o formulário na versão mobile ocupar o espaço padrão */
-        @media (max-width: 767px) {
-            .form-container {
-                width: calc(100% - 20px); /* Ajusta o formulário para ocupar todo o espaço disponível com um pequeno espaço de margem */
-                margin: 10px; /* Adiciona margem ao redor do formulário na versão mobile */
-            }
-        }
-
-        /* Ajuste para o texto de direitos autorais na parte inferior */
-        .copyright-text {
-            text-align: center;
-            margin-top: 30px; /* Adiciona espaçamento entre o conteúdo e o texto de direitos autorais */
-        }
-
-        /* Estilo para os novos boxes com ícones e texto */
-        .info-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #502c7f;
-            color: white;
-            border-radius: 20px;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            transition: background-color 0.3s ease;
-            width: calc(33.33% - 20px);
-        }
-
-        .info-box img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
-        }
-
-        .info-box p {
-            font-size: 1.3em;
-            font-weight: bold;
-        }
-
-        .info-box:hover {
-            background-color: #381f59;
-        }
-
-        .info-box-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .additional-text {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="full-page">
-    <header>
-        <div class="header-buttons">
-            <a href="https://gymmedia.com.br/" class="btn btn-primary" style="background-color: #502c7f; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer; margin-left: 10px;">Página Inicial</a>
-            <a href="#contact-form" class="btn btn-primary">Fale com um Especialista</a>
-        </div>
+<body>
+
+  <header>
     </header>
-    <h1 class="text-center">Automação de Marketing</h1>
-    <div class="container">
-        <div class="info-box-container">
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8"> 
+        <h1>Automação de Marketing</h1>
+        <div class="row">
+          <div class="col-md-4 mb-3">
             <div class="info-box">
-                <img src="corridagym.jpg" alt="Atraia potenciais clientes">
-                <p>Atraia potenciais clientes</p>
+              <img src="corridagym.jpg" alt="Atraia potenciais clientes">
+              <p>Atraia potenciais clientes</p>
             </div>
+          </div>
+          <div class="col-md-4 mb-3">
             <div class="info-box">
-                <img src="funcionalgym2.jpg" alt="Se relacione e qualifique a sua base">
-                <p>Se relacione e qualifique a sua base</p>
+              <img src="funcionalgym2.jpg" alt="Se relacione e qualifique a sua base">
+              <p>Se relacione e qualifique a sua base</p>
             </div>
+          </div>
+          <div class="col-md-4 mb-3">
             <div class="info-box">
-                <img src="funcionalgym.jpg" alt="Feche mais vendas">
-                <p>Feche mais vendas</p>
+              <img src="funcionalgym.jpg" alt="Feche mais vendas">
+              <p>Feche mais vendas</p>
             </div>
+          </div>
         </div>
         <div class="additional-text">
-            <p>
-                → Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.
-            </p>
-            <p>
-                → Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.
-            </p>
+          <p>→ Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.</p>
+          <p>→ Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.</p>
         </div>
+      </div>
+      <div class="col-md-4"> 
         <div class="form-container">
-            <h2 id="form-title">FALE COM UM ESPECIALISTA</h2>
-            <!-- Adicionando o atributo action para enviar os dados para o Formspree -->
-            <form id="contact-form" action="https://formspree.io/f/xeqyvvqw" method="post">
-                <label for="name">Nome:</label><br>
-                <input type="text" id="name" name="name" class="form-control" required><br>
-
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" class="form-control" required><br>
-
-                <label for="title">Cargo:</label><br>
-                <select id="title" name="title" class="form-control" required>
-                    <option value="">Selecione...</option>
-                    <option value="CEO">CEO</option>
-                    <option value="Diretor">Diretor</option>
-                    <option value="Gerente">Gerente</option>
-                    <option value="Analista">Analista</option>
-                    <option value="Estagiário">Estagiário</option>
-                    <option value="Outros">Outros</option>
-                </select><br>
-
-                <label for="organization-website">Site da organização:</label><br>
-                <input type="url" id="organization-website" name="organization-website" class="form-control"><br>
-
-                <label for="title">Número de colaboradores:</label><br>
-                <select id="title" name="title" class="form-control" required>
-                    <option value="">Selecione...</option>
-                    <option value="1 a 9">1 a 9</option>
-                    <option value="10 a 49">10 a 49</option
-                    <option value="50 a 99">50 a 99</option>
-                    <option value="Mais de 100">Mais de 100</option>
-                </select><br>
-
-                <input type="submit" value="Enviar" class="btn btn-primary">
+          <h2>FALE COM UM ESPECIALISTA</h2>
+          <form id="contact-form" action="https://formspree.io/f/xeqyvvqw" method="post">
             </form>
         </div>
+      </div>
     </div>
-    <footer>
-        <p class="copyright-text">© 2024 Gym Media. Todos os direitos reservados.</p>
+  </div>
+
+  <footer>
     </footer>
+
 </body>
 </html>
