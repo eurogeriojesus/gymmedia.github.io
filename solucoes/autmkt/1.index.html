@@ -9,6 +9,55 @@
   <link rel="stylesheet" href="1.css">
   <style>
     /* Seu CSS personalizado aqui */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Poppins, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    #full-page {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #502c7f;
+      margin-bottom: 30px;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      background-color: #502c7f;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-buttons {
+      display: flex;
+    }
+
+    .header-buttons a,
+    .header-buttons button {
+      background-color: #00cfc8;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-left: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .header-buttons a:hover,
+    .header-buttons button:hover {
+      background-color: #009c97;
+    }
+
     .content-container {
       display: flex;
       flex-wrap: wrap;
@@ -16,20 +65,27 @@
       align-items: flex-start;
       max-width: 1200px;
       margin: 0 auto;
+      padding: 20px;
     }
-    
+
     .left-column {
-      flex: 1 1 60%; /* Ajuste a largura conforme necessário */
+      flex: 1 1 60%;
       padding: 20px;
-    }
-    
-    .right-column {
-      flex: 1 1 35%; /* Ajuste a largura conforme necessário */
-      padding: 20px;
-      background-color: #00cfc8;
+      background-color: white;
       border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
     }
-    
+
+    .right-column {
+      flex: 1 1 35%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
     .info-box-container {
       display: flex;
       justify-content: space-between;
@@ -67,17 +123,23 @@
     }
 
     .additional-text {
-      font-size: 1.5em;
+      font-size: 1.1em;
       margin-bottom: 20px;
+      color: #666;
     }
 
     .form-container {
       width: 100%;
     }
 
+    #form-title {
+      color: #502c7f;
+    }
+
     #contact-form label {
       display: block;
       margin-bottom: 5px;
+      color: #333;
     }
 
     #contact-form input[type="text"],
@@ -87,29 +149,43 @@
       width: calc(100% - 22px);
       padding: 10px;
       margin-bottom: 15px;
-      border: 1px solid #381f59;
+      border: 1px solid #ddd;
       border-radius: 10px;
       box-sizing: border-box;
     }
 
     #contact-form input[type="submit"] {
-      background-color: #381f59;
+      background-color: #502c7f;
       color: white;
       border: none;
       border-radius: 10px;
       padding: 10px 20px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     #contact-form input[type="submit"]:hover {
-      background-color: #5a3b7e;
+      background-color: #381f59;
+    }
+
+    footer {
+      background-color: #502c7f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body id="full-page">
   <header>
     <div class="header-buttons">
-      <a href="https://gymmedia.com.br/" class="btn btn-primary" style="background-color: #502c7f; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer; margin-left: 10px;">Página Inicial</a>
+      <a href="https://gymmedia.com.br/" class="btn btn-primary">Página Inicial</a>
       <a href="#contact-form" class="btn btn-primary">Fale com um Especialista</a>
     </div>
   </header>
@@ -167,7 +243,7 @@
     </div>
   </div>
   <footer>
-    <p class="copyright-text">© 2024 Gym Media. Todos os direitos reservados.</p>
+    <p>© 2024 Gym Media. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
