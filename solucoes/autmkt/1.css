@@ -1,24 +1,27 @@
 /* ... (seu CSS atual) ... */
 
 .container {
-  max-width: 1200px; /* Largura máxima do container */
+  max-width: 1200px;
 }
 
-.info-box { /* Estilos para os boxes com as frases */
+/* Estilos para os boxes com as frases */
+.info-box {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: #502c7f; /* Cor de fundo dos boxes */
-  color: white;          /* Cor do texto nos boxes */
-  transition: background-color 0.3s ease; /* Efeito de transição suave na cor de fundo */
+  background-color: #502c7f;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
 .info-box:hover {
-  background-color: #381f59; /* Cor de fundo ao passar o mouse */
+  background-color: #381f59;
 }
 
 .info-box img {
-  max-width: 100%; /* Garante que as imagens se adaptem ao tamanho do box */
-  height: auto;     /* Mantém a proporção das imagens */
+  max-width: 100%;
+  height: auto;
   margin-bottom: 10px;
 }
+
+/* ... (o restante do seu CSS) ... */
