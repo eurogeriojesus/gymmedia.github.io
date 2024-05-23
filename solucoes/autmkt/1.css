@@ -1,4 +1,17 @@
 /* CSS personalizado aqui */
+header {
+  background-color: #381f59;
+}
+
+.header-buttons {
+  justify-content: flex-end;
+}
+
+.info-box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .info-box {
   display: flex;
   justify-content: center;
@@ -7,40 +20,4 @@
   color: white;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px;
-}
-
-.info-box p {
-  text-align: center;
-}
-
-.bg-dark {
-  background-color: #502c7f !important;
-}
-
-.text-white {
-  color: white !important;
-}
-
-.py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
-.img-fluid {
-  width: 100%;
-}
-
-.additional-text {
-  padding: 0 20px;
-}
-
-@media (min-width: 992px) {
-  .d-flex {
-    display: flex !important;
-  }
-
-  .align-items-center {
-    align-items: center !important;
-  }
-}
+  margin-bottom: 20px
