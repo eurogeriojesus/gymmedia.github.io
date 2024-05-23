@@ -89,32 +89,20 @@ header {
   background-color: #502c7f; /* Cor de fundo dos quadrados */
   color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px; /* Aumenta o tamanho dos quadrados */
   margin: 10px;
   text-align: center;
   transition: background-color 0.3s ease;
   width: calc(33.33% - 20px);
 }
 
-.info-box img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
 .info-box p {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .info-box:hover {
   background-color: #381f59; /* Cor de fundo ao passar o mouse */
-}
-
-.additional-text {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #666; /* Cor do texto adicional */
 }
 
 .form-container {
@@ -149,12 +137,8 @@ header {
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  cursor
 
-#contact-form input[type="submit"]:hover {
-  background-color: #381f59; /* Cor do botão ao passar o mouse */
 }
 
 footer {
