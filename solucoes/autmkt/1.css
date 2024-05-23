@@ -1,27 +1,171 @@
-/* ... (seu CSS atual) ... */
-
-.container {
-  max-width: 1200px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  background-color: #f4f4f4; /* Cor de fundo suave para a página */
+  color: #333; /* Cor de texto padrão */
 }
 
-/* Estilos para os boxes com as frases */
-.info-box {
+#full-page {
+  background-color: #f4f4f4; /* Alterando a cor de fundo da tela inteira */
+  color: #333; /* Alterando a cor do texto para cinza escuro */
+}
+
+h1 {
   text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #502c7f;
+  color: #502c7f; /* Cor do título principal */
+  margin-bottom: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #502c7f; /* Cor de fundo do cabeçalho */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o cabeçalho */
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.header-buttons a,
+.header-buttons button {
+  background-color: #00cfc8; /* Cor dos botões */
   color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none; /* Remove underline dos links */
   transition: background-color 0.3s ease;
 }
 
-.info-box:hover {
-  background-color: #381f59;
+.header-buttons a:hover,
+.header-buttons button:hover {
+  background-color: #009c97; /* Cor dos botões ao passar o mouse */
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-column {
+  flex: 1 1 60%;
+  padding: 20px;
+  background-color: white; /* Fundo branco para a coluna esquerda */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px;
+}
+
+.right-column {
+  flex: 1 1 35%;
+  padding: 20px;
+  background-color: white; /* Fundo branco para a coluna direita */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px;
+}
+
+.info-box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #502c7f; /* Cor de fundo dos quadrados */
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: calc(33.33% - 20px);
 }
 
 .info-box img {
-  max-width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
 }
 
-/* ... (o restante do seu CSS) ... */
+.info-box p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.info-box:hover {
+  background-color: #381f59; /* Cor de fundo ao passar o mouse */
+}
+
+.additional-text {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #666; /* Cor do texto adicional */
+}
+
+.form-container {
+  width: 100%;
+}
+
+#form-title {
+  color: #502c7f; /* Cor do título do formulário */
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Cor das labels do formulário */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form input[type="url"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #502c7f; /* Cor do botão de envio */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #381f59; /* Cor do botão ao passar o mouse */
+}
+
+footer {
+  background-color: #502c7f; /* Cor de fundo do rodapé */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
