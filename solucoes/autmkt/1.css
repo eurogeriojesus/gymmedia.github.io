@@ -153,3 +153,26 @@ footer p {
   margin: 0;
   font-size: 0.9em;
 }
+/* ... (CSS anterior permanece o mesmo) ... */
+
+.info-box p { /* Centraliza o texto dentro dos quadrados */
+  text-align: center; 
+}
+
+.additional-content { /* Estiliza a seção com imagem e texto */
+  display: flex;
+  align-items: center;
+}
+
+.additional-image {
+  max-width: 50%; /* Limita a largura da imagem */
+  margin-right: 20px;
+}
+
+.additional-text p {
+  margin-bottom: 10px;
+}
+
+.form-container { /* Centraliza o formulário */
+  text-align: center;
+}
