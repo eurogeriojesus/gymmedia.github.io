@@ -20,4 +20,46 @@ header {
   color: white;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  text-align: center;
+}
+
+.right-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: #502c7f !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.additional-text {
+  padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+  .d-flex {
+    display: flex !important;
+  }
+
+  .align-items-center {
+    align-items: center !important;
+  }
+}
