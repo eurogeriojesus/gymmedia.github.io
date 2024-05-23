@@ -6,186 +6,15 @@
   <title>Automação de Marketing</title>
   <link rel="shortcut icon" href="gymmedialogo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    /* Seu CSS personalizado aqui */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Poppins, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    #full-page {
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    h1 {
-      text-align: center;
-      color: #502c7f;
-      margin-bottom: 30px;
-    }
-
-    header {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px;
-      background-color: #502c7f;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-buttons {
-      display: flex;
-    }
-
-    .header-buttons a,
-    .header-buttons button {
-      background-color: #00cfc8;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 10px 20px;
-      cursor: pointer;
-      margin-left: 10px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .header-buttons a:hover,
-    .header-buttons button:hover {
-      background-color: #009c97;
-    }
-
-    .content-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .left-column {
-      flex: 1 1 60%;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-
-    .right-column {
-      flex: 1 1 35%;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-
-    .info-box-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .info-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #502c7f;
-      color: white;
-      border-radius: 20px;
-      padding: 20px;
-      margin: 10px;
-      text-align: center;
-      transition: background-color 0.3s ease;
-      width: calc(33.33% - 20px);
-    }
-
-    .info-box img {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 10px;
-    }
-
-    .info-box p {
-      font-size: 1.3em;
-      font-weight: bold;
-    }
-
-    .info-box:hover {
-      background-color: #381f59;
-    }
-
-    .additional-text {
-      font-size: 1.1em;
-      margin-bottom: 20px;
-      color: #666;
-    }
-
-    .form-container {
-      width: 100%;
-    }
-
-    #form-title {
-      color: #502c7f;
-    }
-
-    #contact-form label {
-      display: block;
-      margin-bottom: 5px;
-      color: #333;
-    }
-
-    #contact-form input[type="text"],
-    #contact-form input[type="email"],
-    #contact-form select,
-    #contact-form input[type="url"] {
-      width: calc(100% - 22px);
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-sizing: border-box;
-    }
-
-    #contact-form input[type="submit"] {
-      background-color: #502c7f;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    #contact-form input[type="submit"]:hover {
-      background-color: #381f59;
-    }
-
-    footer {
-      background-color: #502c7f;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 20px;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 0.9em;
-    }
+    /* CSS personalizado aqui */
   </style>
 </head>
 <body id="full-page">
   <header>
     <div class="header-buttons">
-      <a href="https://gymmedia.com.br/" class="btn btn-primary">Página Inicial</a>
+      <a href="https://gymmedia.com.br/" class="btn btn-primary" style="background-color: #502c7f; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer; margin-left: 10px;">Página Inicial</a>
       <a href="#contact-form" class="btn btn-primary">Fale com um Especialista</a>
     </div>
   </header>
@@ -194,21 +23,14 @@
     <div class="left-column">
       <div class="info-box-container">
         <div class="info-box">
-          <img src="corridagym.jpg" alt="Atraia potenciais clientes">
           <p>Atraia potenciais clientes</p>
         </div>
         <div class="info-box">
-          <img src="funcionalgym2.jpg" alt="Se relacione e qualifique a sua base">
           <p>Se relacione e qualifique a sua base</p>
         </div>
         <div class="info-box">
-          <img src="funcionalgym.jpg" alt="Feche mais vendas">
           <p>Feche mais vendas</p>
         </div>
-      </div>
-      <div class="additional-text">
-        <p>→ Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.</p>
-        <p>→ Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.</p>
       </div>
     </div>
     <div class="right-column form-container">
@@ -242,8 +64,16 @@
       </form>
     </div>
   </div>
+  <div class="additional-content">
+    <img src="imagem.jpg" alt="Imagem" class="additional-image">
+    <div class="additional-text">
+      <p>→ Ao atrair potenciais clientes com conteúdo relevante e de qualidade, você estabelece uma conexão genuína com seu público-alvo, construindo relacionamentos sólidos e duradouros.</p>
+      <p>→ Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.</p>
+      <a href="#contact-form" class="btn btn-primary" style="background-color: #502c7f; color: white; border: none; border-radius: 20px; padding: 10px 20px; cursor: pointer;">Fale com um especialista</a>
+    </div>
+  </div>
   <footer>
-    <p>© 2024 Gym Media. Todos os direitos reservados.</p>
+    <p class="copyright-text">© 2024 Gym Media. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
