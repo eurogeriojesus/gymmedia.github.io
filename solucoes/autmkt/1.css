@@ -3,32 +3,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #502c7f;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  text-align: center;
 }
 
 .bg-dark {
-  background-color: #502c7f!important; /* Cor de fundo do retângulo grande */
+  background-color: #502c7f !important;
 }
 
 .text-white {
-  color: white!important; /* Cor do texto dentro do retângulo grande */
+  color: white !important;
 }
 
 .py-5 {
-  padding-top: 3rem!important; /* Ajuste de espaçamento dentro do retângulo grande */
-  padding-bottom: 3rem!important; /* Ajuste de espaçamento dentro do retângulo grande */
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .img-fluid {
-  width: 100%; /* Imagem dentro do retângulo grande ocupando toda a largura */
+  width: 100%;
 }
 
 .additional-text {
-  padding: 0 20px; /* Ajuste de espaçamento no texto da segunda seção */
+  padding: 0 20px;
 }
 
 @media (min-width: 992px) {
   .d-flex {
-    display: flex!important;
+    display: flex !important;
   }
 
-  .align-items
+  .align-items-center {
+    align-items: center !important;
+  }
+}
