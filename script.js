@@ -167,16 +167,21 @@
         // Evento para escutar cliques no botão do menu de navegação responsivo
         document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
 
-        // JavaScript para o carrossel utilizando Swiper.js
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper-container', {
-        loop: true, // Ativa o modo de loop do carrossel
-        autoplay: {
-            delay: 3000, // Tempo de transição entre os slides (3 segundos)
-            disableOnInteraction: false, // Permite que o autoplay continue mesmo após interações do usuário
-        },
-        slidesPerView: 'auto', // Quantidade de slides visíveis por vez (ajusta automaticamente)
-        spaceBetween: 20, // Espaçamento entre os slides
-    });
+        document.addEventListener('DOMContentLoaded', function () {
+    // Configurações iniciais
+    var currentSlide = 0;
+    var slides = document.querySelectorAll('.carousel-item');
+    var totalSlides = slides.length;
+    var slideInterval = 3000; // Intervalo de transição em milissegundos
+
+    // Função para mostrar o próximo slide
+    function nextSlide() {
+        slides[currentSlide].classList.remove('ativo');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('ativo');
+    }
+
+    // Iniciar o carrossel
+    setInterval(nextSlide, slideInterval);
 });
 
