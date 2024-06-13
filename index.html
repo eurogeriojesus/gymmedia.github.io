@@ -17,6 +17,42 @@
     </script>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Estilos adicionais para o carrossel */
+        .swiper-container {
+            padding: 20px 0;
+        }
+        .swiper-slide {
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+            font-size: 18px;
+            background-color: #381f59;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        .swiper-button-next {
+            right: 10px;
+        }
+        .swiper-button-prev {
+            left: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,7 +72,7 @@
             </ul>
         </nav>
     </header>
-    </div>
+
     <div class="hero-section">
         <div class="hero-background">
             <video autoplay muted loop>
@@ -52,27 +88,32 @@
     <!-- Seção de Especialistas em diversas ferramentas -->
     <section id="especialistas" class="block">
         <h2>Especialistas em diversas ferramentas</h2>
-        <div class="ferramentas-container">
-            <div class="ferramenta-item">
-                <img src="imagens/rd-station.png" alt="Ferramenta 1">
-                <p>RD Station</p>
+        <div class="swiper-container ferramentas-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ferramenta-item">
+                    <img src="imagens/rd-station.png" alt="Ferramenta 1">
+                    <p>RD Station</p>
+                </div>
+                <div class="swiper-slide ferramenta-item">
+                    <img src="imagens/meta-verso.png" alt="Ferramenta 2">
+                    <p>Meta</p>
+                </div>
+                <div class="swiper-slide ferramenta-item">
+                    <img src="imagens/GA4.png" alt="Ferramenta 3">
+                    <p>Google Analytics 4</p>
+                </div>
+                <div class="swiper-slide ferramenta-item">
+                    <img src="imagens/manychat.png" alt="Ferramenta 4">
+                    <p>Many Chat</p>
+                </div>
+                <div class="swiper-slide ferramenta-item">
+                    <img src="imagens/lead-lovers.png" alt="Ferramenta 5">
+                    <p>Lead lovers</p>
+                </div>
             </div>
-            <div class="ferramenta-item">
-                <img src="imagens/meta-verso.png" alt="Ferramenta 2">
-                <p>Meta</p>
-            </div>
-            <div class="ferramenta-item">
-                <img src="imagens/GA4.png" alt="Ferramenta 3">
-                <p>Google Analytics 4</p>
-            </div>
-            <div class="ferramenta-item">
-                <img src="imagens/manychat.png" alt="Ferramenta 4">
-                <p>Many Chat</p>
-            </div>
-            <div class="ferramenta-item">
-                <img src="imagens/lead-lovers.png" alt="Ferramenta 5">
-                <p>Lead lovers</p>
-            </div>
+            <!-- Adicionando botões de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
@@ -109,6 +150,7 @@
             </div>
         </div>
     </section>
+
     <section id="quem-somos" class="block">
         <h2>Quem Somos</h2>
         <div class="quem-somos-content">
@@ -130,6 +172,7 @@
             </ul>
         </div>
     </section>
+
     <section id="contato" class="block">
         <div class="contato-wrapper">
             <h2 style="text-align: center;">Siga a gente nas redes sociais</h2>
@@ -139,8 +182,22 @@
             </div>
         </div>
     </section>
+
     <footer>
         <p class="copyright-text" style="text-align: center;">© 2024 Gym Media. Todos os direitos reservados.</p>
     </footer>
+
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
