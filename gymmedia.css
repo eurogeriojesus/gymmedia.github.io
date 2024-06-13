@@ -274,6 +274,17 @@ footer {
   padding: 20px 0;
 }
 
+/* Responsividade para a seção "Quem Somos" */
+@media screen and (max-width: 768px) {
+  .quem-somos-content {
+    flex-direction: column; /* Altera a direção do flex container para coluna */
+  }
+
+  .quem-somos-valores {
+    text-align: center; /* Centraliza o texto na versão mobile */
+  }
+}
+
 /* Estilos para a seção "Especialistas em diversas ferramentas" */
 #especialistas {
   padding: 40px 0;
@@ -302,17 +313,4 @@ footer {
 .ferramenta-item p {
   margin-top: 10px;
   font-size: 1em;
-}
-
-/* Responsividade para a seção de especialistas */
-@media screen and (max-width: 768px) {
-  .ferramentas-container {
-    flex-direction: column; /* Altera a direção do flex container para coluna */
-    align-items: center; /* Centraliza os itens na coluna */
-  }
-
-  .ferramenta-item {
-    width: 100%; /* Define a largura total para cada item */
-    max-width: 200px; /* Limita a largura máxima dos itens */
-  }
 }
