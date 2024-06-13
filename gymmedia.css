@@ -284,3 +284,33 @@ footer {
     text-align: center; /* Centraliza o texto na versão mobile */
   }
 }
+
+/* Estilos para a seção "Especialistas em diversas ferramentas" */
+#especialistas {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #381f59;
+  color: #fff;
+}
+
+.ferramentas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.ferramenta-item {
+  width: 150px;
+  text-align: center;
+}
+
+.ferramenta-item img {
+  width: 100%;
+  height: auto;
+}
+
+.ferramenta-item p {
+  margin-top: 10px;
+  font-size: 1em;
+}
