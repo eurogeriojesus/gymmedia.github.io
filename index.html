@@ -10,13 +10,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG7D1HKF8W"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SG7D1HKF8W');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SG7D1HKF8W');
     </script>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -36,7 +34,6 @@
             </ul>
         </nav>
     </header>
-
     <div class="hero-section">
         <div class="hero-background">
             <video autoplay muted loop>
@@ -46,6 +43,33 @@
         </div>
         <div class="hero-content">
             <h1>A parceira estratégica de marketing para as Áreas de Fitness e Wellness</h1>
+        </div>
+    </div>
+
+    <!-- Seção de Especialistas em diversas ferramentas -->
+    <section id="especialistas" class="block">
+        <h2>Especialistas em diversas ferramentas</h2>
+        <div class="ferramentas-container">
+            <div class="ferramenta-item">
+                <img src="imagens/ferramenta1.png" alt="HubSpot">
+                <p>HubSpot</p>
+            </div>
+            <div class="ferramenta-item">
+                <img src="imagens/ferramenta2.png" alt="Hootsuite">
+                <p>Hootsuite</p>
+            </div>
+            <div class="ferramenta-item">
+                <img src="imagens/ferramenta3.png" alt="Mailchimp">
+                <p>Mailchimp</p>
+            </div>
+            <div class="ferramenta-item">
+                <img src="imagens/ferramenta4.png" alt="Google Analytics">
+                <p>Google Analytics</p>
+            </div>
+            <div class="ferramenta-item">
+                <img src="imagens/ferramenta5.png" alt="Buffer">
+                <p>Buffer</p>
+            </div>
         </div>
     </section>
 
@@ -82,7 +106,6 @@
             </div>
         </div>
     </section>
-
     <section id="quem-somos" class="block">
         <h2>Quem Somos</h2>
         <div class="quem-somos-content">
@@ -104,7 +127,6 @@
             </ul>
         </div>
     </section>
-
     <section id="contato" class="block">
         <div class="contato-wrapper">
             <h2 style="text-align: center;">Siga a gente nas redes sociais</h2>
@@ -114,15 +136,46 @@
             </div>
         </div>
     </section>
-
     <footer>
         <p class="copyright-text" style="text-align: center;">© 2024 Gym Media. Todos os direitos reservados.</p>
     </footer>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // Coloque aqui o código JavaScript necessário para o Swiper, se desejar usar
-    </script>
-</body>
-</html>
+        // JavaScript para manipular o comportamento do formulário de contato
+
+        // Função para validar o formulário antes do envio
+        function validarFormulario() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+
+            // Validar se o nome e o email foram preenchidos
+            if (nome.trim() === '' || email.trim() === '') {
+                alert('Por favor, preencha todos os campos do formulário.');
+                return false;
+            }
+
+            return true;
+        }
+
+        // JavaScript para manipular a exibição do menu de navegação responsivo em dispositivos móveis
+
+        // Função para alternar a visibilidade do menu de navegação responsivo
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('ativo');
+        }
+
+        // Evento para escutar cliques no botão do menu de navegação responsivo
+        document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
+
+        // JavaScript para o carrossel utilizando Swiper.js
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+        loop: true, // Ativa o modo de loop do carrossel
+        autoplay: {
+            delay: 3000, // Tempo de transição entre os slides (3 segundos)
+            disableOnInteraction: false, // Permite que o autoplay continue mesmo após interações do usuário
+        },
+        slidesPerView: 'auto', // Quantidade de slides visíveis por vez (ajusta automaticamente)
+        spaceBetween: 20, // Espaçamento entre os slides
+    });
+});
