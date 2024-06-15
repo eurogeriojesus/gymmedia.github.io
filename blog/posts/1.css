@@ -115,7 +115,7 @@ footer {
         font-size: 1.2em;
     }
 }
-
+@media (min-width: 768px) {
 .social-icons {
     position: fixed;
     top: 50%;
