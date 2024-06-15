@@ -128,5 +128,5 @@ footer {
 .social-icons a img {
     width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
     height: 40px;
-    filter: invert(18%) sepia(84%) saturate(7280%) hue-rotate(240deg) brightness(108%) contrast(102%);
+    filter: invert(36%) sepia(5%) saturate(378%) hue-rotate(220deg) brightness(87%) contrast(96%);
 }
