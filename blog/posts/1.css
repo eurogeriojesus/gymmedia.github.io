@@ -10,18 +10,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    padding-top: 80px; /* Adiciona padding-top para compensar o cabeçalho fixo */
 }
 
 header {
     background-color: #381f59;
     color: #fff;
-    padding: 20px 10px;
+    padding: 20px 10px; /* Aumenta o padding para dar mais espaço ao texto */
     text-align: center;
-    position: fixed; /* Torna o cabeçalho fixo */
-    top: 0; /* Posiciona o cabeçalho no topo */
-    width: 100%; /* Faz o cabeçalho ocupar a largura total */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 .banner {
