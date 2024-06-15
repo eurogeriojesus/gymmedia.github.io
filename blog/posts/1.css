@@ -130,3 +130,16 @@ footer {
     height: 40px;
     filter: invert(36%) sepia(5%) saturate(378%) hue-rotate(220deg) brightness(87%) contrast(96%);
 }
+.whatsapp-button {
+    display: inline-block;
+    background-color: #502cff; /* Cor roxa da sua paleta */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #381f59; /* Cor roxa mais escura para hover */
+}
