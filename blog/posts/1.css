@@ -17,6 +17,10 @@ header {
     color: #fff;
     padding: 20px 10px; /* Aumenta o padding para dar mais espaço ao texto */
     text-align: center;
+    position: fixed; /* Torna o cabeçalho fixo */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    width: 100%; /* Faz o cabeçalho ocupar a largura total */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 .banner {
@@ -27,6 +31,7 @@ header {
     padding: 0;
     overflow: hidden;
     height: 200px; /* Altera a altura da faixa roxa */
+    margin-top: 80px; /* Adiciona margem superior para compensar o cabeçalho fixo */
 }
 
 .frase-banner {
@@ -129,7 +134,6 @@ footer {
     width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
     height: 40px;
 }
-
 
 .social-icons a img {
     width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
