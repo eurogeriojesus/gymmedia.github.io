@@ -44,6 +44,10 @@ header {
     transform: translate(-50%, -50%);
     margin-top: 50px; /* Adiciona margem ao topo do texto */
 }
+.custom-text {
+    color: #000; /* Define a cor do texto como preto */
+    line-height: 2; /* Define o espaçamento duplo entre as linhas */
+}
 
 .block {
     padding: 20px;
