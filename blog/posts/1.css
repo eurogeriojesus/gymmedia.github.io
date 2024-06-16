@@ -128,8 +128,6 @@ footer {
 .whatsapp-button:hover {
     background-color: #381f59; /* Cor roxa mais escura para hover */
 }
-}
-@media (min-width: 768px) {
 .social-icons {
     position: fixed;
     top: 50%;
@@ -139,7 +137,17 @@ footer {
     flex-direction: column;
     gap: 10px; /* Espaço entre os ícones */
 }
+
 .social-icons a img {
     width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
     height: 40px;
     filter: invert(36%) sepia(5%) saturate(378%) hue-rotate(220deg) brightness(87%) contrast(96%);
+}
+
+/* Ocultar ícones de redes sociais em dispositivos móveis */
+@media (max-width: 767px) {
+    .social-icons {
+        display: none;
+    }
+}
+
