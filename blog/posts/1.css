@@ -200,3 +200,14 @@ footer {
         margin-top: 20px;
     }
 }
+/* Estilos para dividir em duas colunas */
+
+.left-column {
+    flex: 1;
+    padding-right: 10px; /* Ajuste conforme necessário */
+}
+
+.right-column {
+    flex: 1;
+    padding-left: 10px; /* Ajuste conforme necessário */
+}
