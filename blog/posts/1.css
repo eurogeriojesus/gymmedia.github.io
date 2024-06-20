@@ -118,7 +118,8 @@ footer {
     .blog-post h3, .blog-post h4 {
         font-size: 1.2em;
     }
-    }
+}
+
 .whatsapp-button {
     display: inline-block;
     background-color: #009c97; /* Cor roxa da sua paleta */
@@ -132,6 +133,7 @@ footer {
 .whatsapp-button:hover {
     background-color: #381f59; /* Cor roxa mais escura para hover */
 }
+
 .social-icons {
     position: fixed;
     top: 50%;
@@ -155,3 +157,46 @@ footer {
     }
 }
 
+.about-agency {
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-agency h3 {
+    color: #381f59; /* Cor do título */
+}
+
+.about-agency p {
+    color: #201233; /* Cor do texto */
+}
+
+.contact-info {
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+.contact-info a {
+    color: #00cfc8; /* Cor dos links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Regras responsivas para a seção sobre e contato */
+@media (max-width: 768px) {
+    .about-agency {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
