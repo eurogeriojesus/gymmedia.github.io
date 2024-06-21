@@ -160,7 +160,7 @@ footer {
 /* ... (Outros estilos) ... */
 
 .about-agency {
-  display: flex; /* Usa flexbox para o layout em colunas */
+  display: flex;
   flex-wrap: wrap; /* Permite que as colunas quebrem em linhas menores em telas menores */
   justify-content: space-between; /* Distribui o espaço entre as colunas */
   margin: 20px 0;
@@ -184,4 +184,9 @@ footer {
     width: 100%; /* Faz com que cada coluna ocupe 100% da largura em telas menores */
     margin-bottom: 20px;
   }
+
+  .contact-info {
+    margin-left: 0; /* Remove a margem esquerda em telas menores */
+  }
 }
+
