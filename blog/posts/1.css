@@ -200,14 +200,25 @@ footer {
         margin-top: 20px;
     }
 }
-/* Estilos para dividir em duas colunas */
-
-.left-column {
-    flex: 1;
-    padding-right: 10px; /* Ajuste conforme necessário */
+.about-agency {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.right-column {
+.about-agency > div {
     flex: 1;
-    padding-left: 10px; /* Ajuste conforme necessário */
+    min-width: 300px; /* Ajuste conforme necessário */
+}
+
+.about-agency h3, .about-agency h4 {
+    margin-top: 0;
+}
+
+.about-agency p {
+    margin-bottom: 0.5em;
+}
+
+.contact-info {
+    margin-left: 2em;
 }
