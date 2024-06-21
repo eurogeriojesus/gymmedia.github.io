@@ -17,11 +17,7 @@ header {
     color: #fff;
     padding: 20px 10px; /* Aumenta o padding para dar mais espaço ao texto */
     text-align: center;
-}
 
-.blog-post p {
-    line-height: 2; /* Espaçamento duplo entre as linhas */
-    margin-bottom: 1em; /* Ajusta o espaçamento entre parágrafos */
 }
 
 .block {
