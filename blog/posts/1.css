@@ -191,57 +191,31 @@ footer {
 
 /* Regras responsivas para a seção sobre e contato */
 @media (max-width: 768px) {
-    .about-agency {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
+
+/* ... (Outros estilos) ... */
+
+.about-agency {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px; /* Adiciona padding para espaçamento interno */
+  background-color: #f3f3f3;
+  border-radius: 10px;
 }
 
 .about-agency > div {
-    flex: 1;
-    min-width: 300px; /* Ajuste conforme necessário */
+  flex: 1 1 40%;
+  min-width: 280px; /* Diminui o min-width para caber em telas menores */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
 
-.agency-description {
-    max-width: 50%; /* Limita a largura da descrição */
-}
+/* ... (Outros estilos) ... */
 
-.agency-description p {
-    font-size: 0.9em; /* Diminui o tamanho da fonte */
-    line-height: 1.6em; /* Ajusta a altura da linha para melhor legibilidade */
-    margin-bottom: 0.5em;
-}
-
-.about-agency h3, .about-agency h4 {
-    margin-top: 0;
-}
-
-.contact-info {
-    margin-left: 2em;
-}
-/* Estilos para desktop */
-@media (min-width: 768px) {
-    .about-agency {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.about-agency > div {
-    flex: 1;
-    min-width: 300px; /* Ajuste conforme necessário */
-}
-
-.agency-description p {
-    line-height: 1.6em; /* Ajusta a altura da linha para melhor legibilidade */
-    margin-bottom: 0.5em;
-}
-
-.about-agency h3, .about-agency h4 {
-    margin-top: 0;
-}
-
-.contact-info {
-    margin-left: 2em;
+/* Estilos para mobile */
+@media (max-width: 767px) {
+  .about-agency > div {
+    flex: 1 1 100%;
+    margin-bottom: 20px; /* Adiciona espaçamento inferior em telas menores */
+  }
 }
