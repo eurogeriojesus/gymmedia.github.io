@@ -15,39 +15,13 @@ body {
 header {
     background-color: #381f59;
     color: #fff;
-    padding: 20px 10px;
+    padding: 20px 10px; /* Aumenta o padding para dar mais espaço ao texto */
     text-align: center;
-}
-
-.banner {
-    background-image: url('');
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    padding: 0;
-    overflow: hidden;
-    height: 200px;
-}
-
-.frase-banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.frase-banner h1 {
-    font-weight: 800;
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 50px;
 }
 
 .custom-text {
-    color: #000;
-    line-height: 2;
+    color: #000; /* Define a cor do texto como preto */
+    line-height: 2; /* Define o espaçamento duplo entre as linhas */
 }
 
 .block {
@@ -138,7 +112,7 @@ footer {
 .social-icons {
     position: fixed;
     top: 50%;
-    right: 100px;
+    right: 20px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
