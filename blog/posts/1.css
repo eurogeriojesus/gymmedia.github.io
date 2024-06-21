@@ -181,16 +181,23 @@ footer {
 }
 
 /* Estilos para desktop */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+  /* ... seus estilos existentes ... */
+
   .about-agency {
-    padding: 20px 40px; /* Aumenta o padding horizontal em telas maiores */
-    justify-content: space-between; /* Distribui o espaço entre os elementos em telas maiores */
+    display: flex; /* Ativa o flexbox para o layout em colunas */
+  }
+
+  .agency-description {
+    width: 60%; /* Define a largura da descrição para 60% */
   }
 
   .contact-info {
-    text-align: right; /* Alinha o texto à direita em telas maiores */
+    width: 35%; /* Define a largura da seção de contato para 35% */
+    text-align: right; /* Alinha o texto à direita */
   }
 }
+
 
 /* Estilos para mobile */
 @media (max-width: 767px) {
