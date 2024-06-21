@@ -115,10 +115,15 @@ footer {
     gap: 10px;
 }
 
+.social-icons a { /* Remover sublinhado dos links */
+    text-decoration: none; 
+}
+
 .social-icons a img {
     width: 40px;
     height: 40px;
     filter: invert(36%) sepia(5%) saturate(378%) hue-rotate(220deg) brightness(87%) contrast(96%);
+}
 }
 
 /* Ocultar ícones de redes sociais em dispositivos móveis */
