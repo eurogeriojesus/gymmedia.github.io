@@ -157,30 +157,48 @@ footer {
     }
 }
 
+/* ... (Outros estilos) ... */
+
 .about-agency {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adiciona um espaçamento entre as colunas/linhas */
+  gap: 20px; 
   margin: 20px 0;
-  padding: 20px;
+  padding: 20px; 
   background-color: #f3f3f3;
   border-radius: 10px;
   align-items: flex-start;
 }
 
 .about-agency > div {
-  flex: 1 1 45%; /* Ajusta a largura das colunas para 45% cada */
+  flex: 1 1 45%; 
   min-width: 280px;
   box-sizing: border-box;
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) { 
+  .about-agency {
+    padding: 20px 40px; /* Aumenta o padding horizontal em telas maiores */
+    justify-content: space-around; /* Distribui o espaço entre os elementos em telas maiores */
+  }
+
+  .contact-info {
+    text-align: right; /* Alinha o texto à direita em telas maiores */
+  }
 }
 
 /* Estilos para mobile */
 @media (max-width: 767px) {
   .about-agency {
-    flex-direction: column; /* Muda para layout em coluna em telas menores */
+    flex-direction: column; 
   }
 
   .about-agency > div {
     width: 100%; 
+  }
+
+  .contact-info {
+    text-align: left; 
   }
 }
