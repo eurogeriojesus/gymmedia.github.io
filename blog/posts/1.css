@@ -192,18 +192,10 @@ footer {
 /* Regras responsivas para a seção sobre e contato */
 @media (max-width: 768px) {
     .about-agency {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-.about-agency {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .about-agency > div {
@@ -211,12 +203,14 @@ footer {
     min-width: 300px; /* Ajuste conforme necessário */
 }
 
-.about-agency h3, .about-agency h4 {
-    margin-top: 0;
+.agency-description p {
+    font-size: 0.9em; /* Diminui o tamanho da fonte */
+    line-height: 1.6em; /* Ajusta a altura da linha para melhor legibilidade */
+    margin-bottom: 0.5em;
 }
 
-.about-agency p {
-    margin-bottom: 0.5em;
+.about-agency h3, .about-agency h4 {
+    margin-top: 0;
 }
 
 .contact-info {
