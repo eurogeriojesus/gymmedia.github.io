@@ -119,43 +119,7 @@ footer {
         font-size: 1.2em;
     }
 
-/* ... (Outros estilos) ... */
-
-.about-agency {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #f3f3f3;
-  align-items: center; /* Centraliza verticalmente os itens */
-  justify-content: space-between; /* Garante espaço entre as colunas */
-}
-
-.about-agency > div {
-  flex: 0 1 45%; /* Garante que cada div ocupe 45% do contêiner */
-  min-width: 10px;
-  box-sizing: border-box;
-}
-
-.contact-info {
-  text-align: left;
-}
-
-/* Estilos para mobile */
-@media (max-width: 767px) {
-  .about-agency {
-    flex-direction: column;
-    align-items: flex-start; /* Ajusta o alinhamento para o mobile */
-  }
-
-  .about-agency > div {
-    width: 100%;
-  }
-}
-}
-
-.whatsapp-button {
+    .whatsapp-button {
     display: inline-block;
     background-color: #009c97; /* Cor roxa da sua paleta */
     color: #fff;
@@ -190,4 +154,40 @@ footer {
     .social-icons {
         display: none;
     }
+}
+
+
+/* ... (Outros estilos) ... */
+
+.about-agency {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f3f3f3;
+  align-items: center; /* Centraliza verticalmente os itens */
+  justify-content: space-between; /* Garante espaço entre as colunas */
+}
+
+.about-agency > div {
+  flex: 0 1 45%; /* Garante que cada div ocupe 45% do contêiner */
+  min-width: 10px;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+/* Estilos para mobile */
+@media (max-width: 767px) {
+  .about-agency {
+    flex-direction: column;
+    align-items: flex-start; /* Ajusta o alinhamento para o mobile */
+  }
+
+  .about-agency > div {
+    width: 100%;
+  }
 }
