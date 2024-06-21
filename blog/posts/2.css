@@ -179,16 +179,3 @@ footer {
     .about-agency > div {
         width: 100%;
     }
-}
-/* Estilos do rodapé */
-footer {
-  background-color: #000; /* Cor de fundo do rodapé (preto no exemplo) */
-  color: #fff; /* Cor do texto do rodapé (branco no exemplo) */
-  padding: 20px; /* Espaçamento interno do rodapé */
-
-  /* Posicionamento do rodapé */
-  position: fixed; /* Fixar o rodapé na parte inferior da tela */
-  bottom: 0; /* Posicionar o rodapé na parte inferior */
-  left: 0; /* Posicionar o rodapé à esquerda */
-  width: 100%; /* Ocupar toda a largura da tela */
-}
