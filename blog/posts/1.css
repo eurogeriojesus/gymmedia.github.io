@@ -157,41 +157,6 @@ footer {
     }
 }
 
-.about-agency {
-    background-color: #f3f3f3;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.about-agency h3 {
-    color: #381f59; /* Cor do título */
-}
-
-.about-agency p {
-    color: #201233; /* Cor do texto */
-}
-
-.contact-info {
-    margin-left: 20px;
-    max-width: 300px;
-}
-
-.contact-info a {
-    color: #00cfc8; /* Cor dos links */
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Regras responsivas para a seção sobre e contato */
-@media (max-width: 768px) {
-
 /* ... (Outros estilos) ... */
 
 .about-agency {
@@ -199,23 +164,27 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
-  padding: 20px; /* Adiciona padding para espaçamento interno */
+  padding: 20px;
   background-color: #f3f3f3;
   border-radius: 10px;
+  align-items: flex-start; /* Alinha os itens no topo do container */
 }
 
 .about-agency > div {
   flex: 1 1 40%;
-  min-width: 280px; /* Diminui o min-width para caber em telas menores */
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
 /* ... (Outros estilos) ... */
 
 /* Estilos para mobile */
 @media (max-width: 767px) {
+  .about-agency {
+    flex-direction: column; /* Muda para layout em coluna em telas menores */
+  }
   .about-agency > div {
-    flex: 1 1 100%;
-    margin-bottom: 20px; /* Adiciona espaçamento inferior em telas menores */
+    flex: 1 1 100%; 
+    margin-bottom: 20px;
   }
 }
