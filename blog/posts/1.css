@@ -173,7 +173,7 @@ footer {
 
 .about-agency > div {
   flex: 0 1 45%; /* Garante que cada div ocupe 45% do contêiner */
-  min-width: 280px;
+  min-width: 320px;
   box-sizing: border-box;
 }
 
