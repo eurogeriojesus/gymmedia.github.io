@@ -178,6 +178,7 @@ footer {
 
 .contact-info {
   text-align: left;
+  left: 50px; /* Move o texto 20 pixels para a direita */
 }
 
 /* Estilos para mobile */
