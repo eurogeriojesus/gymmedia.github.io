@@ -223,6 +223,32 @@ footer {
 /* Estilos para desktop */
 @media (min-width: 768px) {
     .about-agency {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.about-agency > div {
+    flex: 1;
+    min-width: 300px; /* Ajuste conforme necessário */
+}
+
+.agency-description p {
+    line-height: 1.6em; /* Ajusta a altura da linha para melhor legibilidade */
+    margin-bottom: 0.5em;
+}
+
+.about-agency h3, .about-agency h4 {
+    margin-top: 0;
+}
+
+.contact-info {
+    margin-left: 2em;
+}
+
+/* Estilos para desktop */
+@media (min-width: 768px) {
+    .about-agency {
         justify-content: space-between;
     }
 
@@ -230,8 +256,12 @@ footer {
         max-width: 50%; /* Limita a largura da descrição no desktop */
     }
 
-    .agency-description p {
-        font-size: 0.9em; /* Diminui o tamanho da fonte no desktop */
+    .agency-description p.desktop-description {
+        display: block;
+    }
+
+    .agency-description p.full-description {
+        display: none;
     }
 }
 
@@ -248,5 +278,13 @@ footer {
 
     .agency-description p {
         font-size: 1em; /* Tamanho da fonte no mobile */
+    }
+
+    .agency-description p.desktop-description {
+        display: none;
+    }
+
+    .agency-description p.full-description {
+        display: block;
     }
 }
