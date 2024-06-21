@@ -157,36 +157,30 @@ footer {
     }
 }
 
-/* ... (Outros estilos) ... */
-
 .about-agency {
   display: flex;
-  flex-wrap: wrap; /* Permite que as colunas quebrem em linhas menores em telas menores */
-  justify-content: space-between; /* Distribui o espaço entre as colunas */
+  flex-wrap: wrap;
+  gap: 20px; /* Adiciona um espaçamento entre as colunas/linhas */
   margin: 20px 0;
   padding: 20px;
   background-color: #f3f3f3;
   border-radius: 10px;
-  align-items: flex-start; /* Alinha os itens no topo do container */
+  align-items: flex-start;
 }
 
 .about-agency > div {
-  width: 48%; /* Define a largura de cada coluna para 48% */
+  flex: 1 1 45%; /* Ajusta a largura das colunas para 45% cada */
   min-width: 280px;
   box-sizing: border-box;
 }
 
-/* ... (Outros estilos) ... */
-
 /* Estilos para mobile */
 @media (max-width: 767px) {
-  .about-agency > div {
-    width: 100%; /* Faz com que cada coluna ocupe 100% da largura em telas menores */
-    margin-bottom: 20px;
+  .about-agency {
+    flex-direction: column; /* Muda para layout em coluna em telas menores */
   }
 
-  .contact-info {
-    margin-left: 0; /* Remove a margem esquerda em telas menores */
+  .about-agency > div {
+    width: 100%; 
   }
 }
-
