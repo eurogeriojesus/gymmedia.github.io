@@ -19,9 +19,9 @@ header {
     text-align: center;
 }
 
-.custom-text {
-    color: #000; /* Define a cor do texto como preto */
-    line-height: 2; /* Define o espaçamento duplo entre as linhas */
+.blog-post p {
+    line-height: 2; /* Espaçamento duplo entre as linhas */
+    margin-bottom: 1em; /* Ajusta o espaçamento entre parágrafos */
 }
 
 .block {
