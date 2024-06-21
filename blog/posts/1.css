@@ -160,9 +160,9 @@ footer {
 /* ... (Outros estilos) ... */
 
 .about-agency {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: flex; /* Usa flexbox para o layout em colunas */
+  flex-wrap: wrap; /* Permite que as colunas quebrem em linhas menores em telas menores */
+  justify-content: space-between; /* Distribui o espaço entre as colunas */
   margin: 20px 0;
   padding: 20px;
   background-color: #f3f3f3;
@@ -171,7 +171,7 @@ footer {
 }
 
 .about-agency > div {
-  flex: 1 1 40%;
+  width: 48%; /* Define a largura de cada coluna para 48% */
   min-width: 280px;
   box-sizing: border-box;
 }
@@ -180,11 +180,8 @@ footer {
 
 /* Estilos para mobile */
 @media (max-width: 767px) {
-  .about-agency {
-    flex-direction: column; /* Muda para layout em coluna em telas menores */
-  }
   .about-agency > div {
-    flex: 1 1 100%; 
+    width: 100%; /* Faz com que cada coluna ocupe 100% da largura em telas menores */
     margin-bottom: 20px;
   }
 }
