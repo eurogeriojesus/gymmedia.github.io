@@ -17,19 +17,6 @@ header {
     color: #fff;
     padding: 20px 10px; /* Aumenta o padding para dar mais espaço ao texto */
     text-align: center;
-
-}
-
-.block {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-.block h2 {
-    margin-top: 0;
-    color: #381f59;
 }
 
 .blog-post {
@@ -70,14 +57,11 @@ footer {
     padding: 10px;
     background-color: #381f59;
     color: #fff;
+    margin-top: 20px; /* Ajuste o margin-top conforme necessário para preencher o espaço */
 }
 
 /* Adiciona regras responsivas */
 @media (max-width: 768px) {
-    .blog-image {
-        height: auto;
-    }
-
     .blog-post h2 {
         font-size: 1.5em;
     }
@@ -89,20 +73,14 @@ footer {
     .blog-post h3, .blog-post h4 {
         font-size: 1.2em;
     }
-}
 
-.whatsapp-button {
-    display: inline-block;
-    background-color: #009c97;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+    .social-icons {
+        display: none;
+    }
 
-.whatsapp-button:hover {
-    background-color: #381f59;
+    .about-agency > div {
+        width: 100%;
+    }
 }
 
 .social-icons {
@@ -115,22 +93,14 @@ footer {
     gap: 10px;
 }
 
-.social-icons a { /* Remover sublinhado dos links */
-    text-decoration: none; 
+.social-icons a {
+    text-decoration: none;
 }
 
 .social-icons a img {
     width: 40px;
     height: 40px;
     filter: invert(36%) sepia(5%) saturate(378%) hue-rotate(220deg) brightness(87%) contrast(96%);
-}
-}
-
-/* Ocultar ícones de redes sociais em dispositivos móveis */
-@media (max-width: 767px) {
-    .social-icons {
-        display: none;
-    }
 }
 
 .about-agency {
@@ -169,34 +139,3 @@ footer {
         text-align: right;
     }
 }
-
-/* Estilos para mobile */
-@media (max-width: 767px) {
-    .about-agency {
-        flex-direction: column;
-    }
-
-    .about-agency > div {
-        width: 100%;
-    }
-/* Ajustes no CSS para preencher o espaço azul com o rodapé superior */
-
-.about-agency {
-  background-color: #f3f3f3;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Remover o margin-top para reduzir o espaço entre o conteúdo anterior e o .about-agency */
-.about-agency {
-  margin-top: 0; /* Removendo ou ajustando conforme necessário */
-}
-
-footer {
-  background-color: #381f59; /* Cor de fundo do rodapé superior */
-  color: #fff; /* Cor do texto do rodapé */
-  padding: 20px; /* Espaçamento interno do rodapé */
-  text-align: center; /* Alinhamento do texto */
-  margin-top: 20px; /* Ajuste o margin-top conforme necessário para preencher o espaço */
-}
-
