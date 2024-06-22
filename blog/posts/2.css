@@ -179,3 +179,22 @@ footer {
     .about-agency > div {
         width: 100%;
     }
+/* Ajustes no CSS para preencher o espaço azul com o rodapé superior */
+
+.about-agency {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Remover o margin-top para reduzir o espaço entre o conteúdo anterior e o .about-agency */
+.about-agency {
+  margin-top: 0; /* Removendo ou ajustando conforme necessário */
+}
+
+footer {
+  background-color: #381f59; /* Cor de fundo do rodapé superior */
+  color: #fff; /* Cor do texto do rodapé */
+  padding: 20px; /* Espaçamento interno do rodapé */
+  text-align: center; /* Alinhamento do texto */
+}
