@@ -197,4 +197,6 @@ footer {
   color: #fff; /* Cor do texto do rodapé */
   padding: 20px; /* Espaçamento interno do rodapé */
   text-align: center; /* Alinhamento do texto */
+  margin-top: 20px; /* Ajuste o margin-top conforme necessário para preencher o espaço */
 }
+
