@@ -82,12 +82,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p>→ As interações positivas podem ser vistas por um grande número de pessoas, o que pode atrair novos clientes. Por outro lado, ignorar comentários ou responder de maneira inadequada pode prejudicar a imagem da marca.<p>
                     <p>→ Ao qualificar essa base de leads, você garante que está focando seus esforços nas pessoas certas, aumentando suas chances de fechar mais vendas de forma eficiente e sustentável.</p>
                 </div>
-            </div>
+            </div> 
             <div class="col-md-6">
                 <div class="form-container">
+        
+                   <script>
+        async function enviarFormulario(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const formData = {
+                nome: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                mensagem: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('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', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer SEU_TOKEN_DE_API`
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    alert('Formulário enviado com sucesso!');
+                } else {
+                    alert('Erro ao enviar o formulário.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Erro ao enviar o formulário.');
+            }
+        }
+    </script>
                     <h2 id="form-title">FALE COM UM ESPECIALISTA</h2>
-                    <!-- Adicionando o atributo action para enviar os dados para o Formspree -->
-                    <form id="contact-form" action="https://formspree.io/f/xayraanp" method="post">
                         <label for="name">Nome:</label><br>
                         <input type="text" id="name" name="name" class="form-control" required><br>
 
