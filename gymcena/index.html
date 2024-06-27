@@ -1,84 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W5ZTP3XN');</script>
-<!-- End Google Tag Manager -->
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gym Media - Gym Cena</title>
-  <link rel="stylesheet" href="lp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Cena - Criação de Vídeos para Fitness e Wellness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77d4d8 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .cta-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #77d4d8;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+        .benefits, .testimonials, .reinforce, .form-section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .benefits h2, .testimonials h2, .reinforce h2, .form-section h2 {
+            text-align: center;
+        }
+        .benefit, .testimonial {
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            border-left: 4px solid #77d4d8;
+            padding-left: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input, form textarea, form button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background: #77d4d8;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5ZTP3XN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
-  <header>
-    <h1>Gym Media</h1>
-    <h2>Gym Cena</h2>
-    <p>Sua solução para produção de vídeos estratégicos</p>
-  </header>
-
-  <section id="promessa">
+    <header>
+        <div class="container">
+            <h1>Gym Cena - Criação de Vídeos para Fitness e Wellness</h1>
+        </div>
+    </header>
     <div class="container">
-      <h3>Promessa</h3>
-      <p>A Gym Cena vai transformar sua presença digital no setor fitness e wellness através de vídeos estratégicos, mesmo usando apenas o celular.</p>
+        <!-- CTA Section -->
+        <section>
+            <button class="cta-button" onclick="document.getElementById('signup-form').scrollIntoView({behavior: 'smooth'})">Inscreva-se Agora</button>
+        </section>
+        
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h2>Benefícios do Gym Cena</h2>
+            <div class="benefit">✔️ Criação de vídeos simples com o celular</div>
+            <div class="benefit">✔️ Roteiros estratégicos alinhados com objetivos de marketing</div>
+            <div class="benefit">✔️ Aumento do engajamento nas redes sociais</div>
+            <div class="benefit">✔️ Fácil de seguir, mesmo sem experiência prévia</div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial">
+                <p>"O Gym Cena transformou a forma como apresento meu negócio nas redes sociais. Super recomendo!" - João Silva</p>
+            </div>
+            <div class="testimonial">
+                <p>"Os roteiros são incríveis e muito fáceis de seguir. Meu engajamento aumentou significativamente!" - Maria Fernanda</p>
+            </div>
+        </section>
+        
+        <!-- Reinforce Message Section -->
+        <section class="reinforce">
+            <h2>Não perca essa oportunidade!</h2>
+            <p>Com o Gym Cena, você vai aprender a criar vídeos de alta qualidade usando apenas o seu celular. Alavanque seu negócio no mundo fitness e wellness com conteúdos que engajam e convertem.</p>
+        </section>
+        
+        <!-- Signup Form Section -->
+        <section id="signup-form" class="form-section">
+            <h2>Inscreva-se Agora</h2>
+            <form action="https://seu-dominio.com/inscricao" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </div>
-  </section>
-
-  <section id="problema">
-    <div class="container">
-      <h3>Problema</h3>
-      <p>Muitas empresas do setor fitness e wellness enfrentam dificuldades para criar conteúdo de vídeo de qualidade, limitadas por equipamentos caros e falta de expertise em roteirização.</p>
-    </div>
-  </section>
-
-  <section id="voce">
-    <div class="container">
-      <h3>Você</h3>
-      <p>A Gym Media é uma equipe especializada em estratégias de mídia digital para o setor fitness e wellness. Com anos de experiência, estamos prontos para ajudar sua empresa a se destacar.</p>
-    </div>
-  </section>
-
-  <section id="beneficios">
-    <div class="container">
-      <h3>Benefícios</h3>
-      <ul>
-        <li>Roteiros de vídeo personalizados para sua marca</li>
-        <li>Plano curso com aulas sobre produção de vídeo para celular</li>
-        <li>Aumento da presença digital e engajamento do público-alvo</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="prove">
-    <div class="container">
-      <h3>Prove</h3>
-      <p>Veja o que nossos clientes têm a dizer:</p>
-      <blockquote>"A Gym Cena revolucionou nossa estratégia de marketing digital. Agora podemos produzir vídeos de alta qualidade sem precisar de equipamentos caros." - Academia FitnessX</blockquote>
-    </div>
-  </section>
-
-  <section id="oferta">
-    <div class="container">
-      <h3>Oferta</h3>
-      <p>Não perca mais tempo, transforme sua presença digital hoje mesmo com a Gym Cena!</p>
-      <a href="#" class="btn">Contrate Agora</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Gym Media. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
-
