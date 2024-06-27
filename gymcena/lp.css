@@ -29,6 +29,22 @@ header h1 {
     font-size: 24px;
 }
 
+.intro, .benefits, .testimonials, .reinforce, .form-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2, .benefits h2, .testimonials h2, .reinforce h2, .form-section h2 {
+    text-align: center;
+    color: #381f59;
+    border-bottom: 2px solid #03fff6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
 .cta-button {
     display: block;
     width: 200px;
@@ -46,22 +62,6 @@ header h1 {
 
 .cta-button:hover {
     background: #009c97;
-}
-
-.benefits, .testimonials, .reinforce, .form-section {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.benefits h2, .testimonials h2, .reinforce h2, .form-section h2 {
-    text-align: center;
-    color: #381f59;
-    border-bottom: 2px solid #03fff6;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
 }
 
 .benefit, .testimonial {
