@@ -15,129 +15,57 @@
     <div class="container">
         <!-- Introdução -->
         <section class="intro">
-            <h2>Aprenda a criar vídeos que chamam a atençaõ, usando apenas o celular</h2>
+            <h2>Bem-vindo ao Gym Cena!</h2>
             <p>Na Gym Media, sabemos que criar vídeos impactantes é essencial para o sucesso no mercado fitness e wellness. É por isso que desenvolvemos o Gym Cena, um produto que capacita empreendedores, analistas e influenciadores a produzirem vídeos de alta qualidade, utilizando apenas seus celulares.</p>
             <p>Com o Gym Cena, você aprenderá tudo sobre planos e ângulos, storytelling, edição no Capcut e muito mais. Nossos roteiros estratégicos são alinhados aos objetivos de marketing do seu negócio, garantindo que cada vídeo conte uma história envolvente e autêntica.</p>
         </section>
-    <style>
-        body {
-            font-family: Poppings, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77d4d8 3px solid;
-        }
-        header h1 {
-            text-align: center;
-            text-transform: uppercase;
-            margin: 0;
-            font-size: 24px;
-        }
-        .cta-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 15px;
-            background: #77d4d8;
-            color: #fff;
-            text-align: center;
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-        }
-        .benefits, .testimonials, .reinforce, .form-section {
-            background: #fff;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .benefits h2, .testimonials h2, .reinforce h2, .form-section h2 {
-            text-align: center;
-        }
-        .benefit, .testimonial {
-            margin-bottom: 20px;
-        }
-        .testimonial {
-            border-left: 4px solid #77d4d8;
-            padding-left: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        form input, form textarea, form button {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-        }
-        form button {
-            background: #77d4d8;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Gym Cena - Criação de Vídeos para Fitness e Wellness</h1>
-        </div>
-    </header>
-    <div class="container">
+
         <!-- CTA Section -->
         <section>
-            <button class="cta-button" onclick="document.getElementById('signup-form').scrollIntoView({behavior: 'smooth'})">Inscreva-se Agora</button>
+            <button class="cta-button" onclick="document.getElementById('form-section').scrollIntoView();">Inscreva-se Agora</button>
         </section>
-        
+
         <!-- Benefits Section -->
         <section class="benefits">
             <h2>Benefícios do Gym Cena</h2>
-            <div class="benefit">✔️ Criação de vídeos simples com o celular</div>
-            <div class="benefit">✔️ Roteiros estratégicos alinhados com objetivos de marketing</div>
-            <div class="benefit">✔️ Aumento do engajamento nas redes sociais</div>
-            <div class="benefit">✔️ Fácil de seguir, mesmo sem experiência prévia</div>
+            <div class="benefit">
+                <h3>Produção Simplificada</h3>
+                <p>Aprenda a criar vídeos de alta qualidade usando apenas o seu celular.</p>
+            </div>
+            <div class="benefit">
+                <h3>Roteiros Estratégicos</h3>
+                <p>Roteiros alinhados aos objetivos de marketing do seu negócio.</p>
+            </div>
+            <div class="benefit">
+                <h3>Conteúdo Envolvente</h3>
+                <p>Dicas e técnicas para contar histórias que cativam seu público.</p>
+            </div>
         </section>
-        
+
         <!-- Testimonials Section -->
         <section class="testimonials">
-            <h2>O que nossos clientes dizem</h2>
+            <h2>O que dizem nossos clientes</h2>
             <div class="testimonial">
-                <p>"O Gym Cena transformou a forma como apresento meu negócio nas redes sociais. Super recomendo!" - João Silva</p>
+                <p>"O Gym Cena transformou a maneira como criamos conteúdo para nossas redes sociais. A qualidade dos nossos vídeos melhorou significativamente!" - João Silva, Personal Trainer</p>
             </div>
             <div class="testimonial">
-                <p>"Os roteiros são incríveis e muito fáceis de seguir. Meu engajamento aumentou significativamente!" - Maria Fernanda</p>
+                <p>"As dicas de storytelling foram essenciais para aumentar o engajamento dos nossos vídeos. Recomendo a todos!" - Maria Souza, Influenciadora de Fitness</p>
             </div>
         </section>
-        
+
         <!-- Reinforce Message Section -->
         <section class="reinforce">
-            <h2>Não perca essa oportunidade!</h2>
-            <p>Com o Gym Cena, você vai aprender a criar vídeos de alta qualidade usando apenas o seu celular. Alavanque seu negócio no mundo fitness e wellness com conteúdos que engajam e convertem.</p>
+            <h2>Não perca essa oportunidade</h2>
+            <p>Transforme a forma como você cria conteúdo e leve seu negócio para o próximo nível com o Gym Cena. Inscreva-se agora e comece a fazer vídeos que realmente fazem a diferença.</p>
         </section>
-        
-        <!-- Signup Form Section -->
-        <section id="signup-form" class="form-section">
-            <h2>Inscreva-se Agora</h2>
-            <form action="https://seu-dominio.com/inscricao" method="POST">
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="mensagem" rows="5" placeholder="Sua Mensagem"></textarea>
+
+        <!-- Form Section -->
+        <section id="form-section" class="form-section">
+            <h2>Inscreva-se no Gym Cena</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Conte-nos mais sobre seu negócio" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
