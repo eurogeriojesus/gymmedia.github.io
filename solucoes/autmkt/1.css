@@ -1,81 +1,49 @@
+/* Estilo global */
 body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
 }
 
-#full-page {
-    background-color: #381f59; /* Alterando a cor de fundo da tela inteira */
-    color: white; /* Alterando a cor do texto para branco */
-}
-
-h1 {
+h1.text-center {
     text-align: center;
+    color: white;
+    background-color: #00cfc8;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
 }
 
 .boxes-container {
     display: flex;
-    margin-bottom: 20px; /* Adicionando margem inferior para separar os quadrados */
+    flex-direction: column;
+    gap: 15px;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
-    background-color: #502c7f;
-    border-radius: 20px;
-    margin-right: 20px; /* Adicionando margem à direita para separar os quadrados */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box p {
+    background-color: #381f59;
+    border-radius: 10px;
+    padding: 20px;
     color: white;
+    font-size: 1.2em;
     text-align: center;
-    margin: 10px;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-    background-color: #009c97;
-}
-
-.header-buttons {
-    display: flex;
-}
-
-.header-buttons a,
-.header-buttons button {
-    background-color: #502c7f;
-    color: white;
-    border: #000000;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.header-buttons button:first-child {
-    margin-left: auto;
-}
-
-.content-container {
-    display: flex;
-    align-items: flex-start;
-    max-width: 1200px; /* ajuste de largura máxima */
-    margin: 0 auto; /* centralizar horizontalmente */
 }
 
 .additional-text {
-    width: 100%; /* largura total */
-    margin-top: 20px; /* espaço acima das frases adicionais */
-    text-align: center; /* centralizar o texto */
+    margin-top: 20px;
 }
 
-.arrow {
-    margin-right: 5px;
+.additional-text p {
+    font-size: 1.5em;
+    text-align: left;
 }
+
+/* Estilo específico para os parágrafos com seta */
+.additional-text p:before {
+    content: '→ ';
+}
+
