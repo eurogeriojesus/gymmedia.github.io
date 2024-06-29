@@ -1,5 +1,4 @@
-// Adicionando rótulos visíveis para cada campo do formulário
-const formLabels = document.querySelectorAll('#contact-form label');
+
 
 formLabels.forEach(label => {
     const inputId = label.getAttribute('for');
