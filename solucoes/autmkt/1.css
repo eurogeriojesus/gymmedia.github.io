@@ -52,7 +52,7 @@ header {
 .header-buttons button {
     background-color: #502c7f;
     color: white;
-    border: none;
+    border: #000000;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
