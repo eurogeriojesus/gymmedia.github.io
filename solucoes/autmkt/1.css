@@ -79,10 +79,3 @@ header {
 .arrow {
     margin-right: 5px;
 }
-
-.form-container {
-    width: 50%; /* largura do formulário */
-    background-color: #00cfc8; /* cor de fundo para destacar o formulário */
-    padding: 20px;
-    border-radius: 10px;
-}
