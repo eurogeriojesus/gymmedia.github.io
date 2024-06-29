@@ -87,11 +87,6 @@ header {
     border-radius: 10px;
 }
 
-#contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
  {
     width: calc(100% - 22px); /* ajuste da largura para compensar o padding e a borda */
     padding: 10px;
@@ -99,19 +94,6 @@ header {
     border: 1px solid #381f59;
     border-radius: 10px;
     box-sizing: border-box;
-}
-
-#contact-form input[type="submit"] {
-    background-color: #381f59;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#contact-form input[type="submit"]:hover {
-    background-color: #5a3b7e;
 }
 
 /* Efeito de transição nos quadrados de texto */
