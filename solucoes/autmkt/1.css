@@ -1,36 +1,55 @@
-/* Estilo global */
 body {
-    background-color: white;
     font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-h1.text-center {
+header {
+    background: #381f59;
+    padding: 10px 0;
     text-align: center;
-    color: white;
-    background-color: #00cfc8;
-    padding: 20px 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2em;
     margin: 0;
 }
 
 .container {
-    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex: 1;
+    margin: 10px;
 }
 
 .boxes-container {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .box {
-    background-color: #381f59;
-    border-radius: 10px;
+    background: #381f59;
+    color: #fff;
     padding: 20px;
-    color: white;
-    font-size: 1.2em;
+    border-radius: 10px;
     text-align: center;
+    flex: 1;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .additional-text {
@@ -40,10 +59,38 @@ h1.text-center {
 .additional-text p {
     font-size: 1.5em;
     text-align: left;
+    margin: 10px 0;
 }
 
-/* Estilo específico para os parágrafos com seta */
-.additional-text p:before {
-    content: '→ ';
+nav {
+    background: #381f59;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
 }
 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00cfc8;
+}
+
+nav .special-button {
+    background: #00cfc8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+nav .special-button:hover {
+    background: #009c97;
+}
