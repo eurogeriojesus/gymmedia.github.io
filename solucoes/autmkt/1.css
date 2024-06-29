@@ -92,10 +92,7 @@ header {
     margin-bottom: 5px;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form select,
-#contact-form input[type="url"] {
+ {
     width: calc(100% - 22px); /* ajuste da largura para compensar o padding e a borda */
     padding: 10px;
     margin-bottom: 15px;
