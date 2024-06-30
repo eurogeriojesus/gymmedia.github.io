@@ -24,17 +24,6 @@ header h1 {
     overflow: hidden;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.col-md-6 {
-    flex: 1;
-    margin: 10px;
-}
-
 .boxes-container {
     display: flex;
     justify-content: space-between;
@@ -44,11 +33,12 @@ header h1 {
 .box {
     background: #381f59;
     color: #fff;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 10px;
     text-align: center;
     flex: 1;
     margin: 10px;
+    font-size: 1.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
