@@ -19,16 +19,20 @@ body {
 }
 
 .benefits-section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .benefits-section .container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .benefits-section .box {
