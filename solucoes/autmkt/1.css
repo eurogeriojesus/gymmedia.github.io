@@ -26,15 +26,16 @@ body {
 }
 
 .benefits-section {
-    display: flex;
-    justify-content: center;
     padding: 40px 20px;
     background-color: #f9f9f9;
+    text-align: center;
 }
 
 .benefits-section .container {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .benefits-section .box {
@@ -49,9 +50,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.cta-section {
+.specialist-button-container {
     text-align: center;
-    padding: 20px;
 }
 
 .cta-button {
