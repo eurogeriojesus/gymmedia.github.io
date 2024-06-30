@@ -74,6 +74,11 @@ body {
     color: #201233;
 }
 
+/* Remove sublinhado do link "Fale com um especialista" */
+.footer .widget_nav_menu .menu li:last-child a {
+    text-decoration: none;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .benefits-section .container {
