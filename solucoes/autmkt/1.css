@@ -18,13 +18,6 @@ body {
     margin: 0;
 }
 
-.intro-section {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #201233;
-}
-
 .benefits-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -70,9 +63,9 @@ body {
     background-color: #009c97;
 }
 
-footer {
-    text-align: center;
+.intro-section {
     padding: 20px;
-    background-color: #381f59;
-    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    color: #201233;
 }
