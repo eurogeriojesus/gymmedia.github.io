@@ -1,69 +1,67 @@
-<style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #381f59;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #381f59;
+}
 
-        .header-section {
-            background-color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+.header-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
-        .header-section h1 {
-            color: #381f59;
-            font-size: 2.5em;
-            margin: 0;
-        }
+.header-section h1 {
+    color: #381f59;
+    font-size: 2.5em;
+    margin: 0;
+}
 
-        .benefits-section {
-            padding: 0; /* Removido o padding para preencher a tela */
-            background-color: #f9f9f9;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+.benefits-section {
+    padding: 0; /* Removido o padding para preencher a tela */
+    background-color: #f9f9f9;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-        .video-container {
-            width: 100%; /* Ajuste para preencher toda a largura da seção */
-            height: 100vh; /* Ajuste para preencher toda a altura da seção */
-        }
+.video-container {
+    width: 100%; /* Ajuste para preencher toda a largura da seção */
+    height: 100%; /* Ajuste para preencher toda a altura da seção */
+}
 
-        .video-container iframe {
-            width: 100%; /* Ajuste para preencher toda a largura da seção */
-            height: 100%; /* Ajuste para preencher toda a altura da seção */
-        }
+.video-container iframe {
+    width: 100%; /* Ajuste para preencher toda a largura da seção */
+    height: 100%; /* Ajuste para preencher toda a altura da seção */
+}
 
-        .specialist-button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
+.specialist-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
-        .cta-button {
-            background-color: #00cfc8;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+.cta-button {
+    background-color: #00cfc8;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        .cta-button:hover {
-            background-color: #009c97;
-        }
+.cta-button:hover {
+    background-color: #009c97;
+}
 
-        .intro-section {
-            padding: 20px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #201233;
-        }
-    </style>
+.intro-section {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #201233;
+}
