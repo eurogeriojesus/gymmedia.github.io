@@ -73,3 +73,30 @@ body {
     font-size: 1.2em;
     color: #201233;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .benefits-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-section .box {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .header-section h1 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+
+    .intro-section {
+        font-size: 1em;
+    }
+}
